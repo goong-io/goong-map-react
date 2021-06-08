@@ -2,11 +2,11 @@
 import * as React from 'react';
 import {useState} from 'react';
 import {render} from 'react-dom';
-import MapGL, {NavigationControl} from 'react-map-gl';
+import MapGL, {NavigationControl} from '@goongmaps/goong-map-react';;
 
-import {ViewportProps} from 'react-map-gl';
+import {ViewportProps} from '@goongmaps/goong-map-react';;
 
-const MAPBOX_TOKEN = ''; // Set your mapbox token here
+const GOONG_MAPTILES_KEY = ''; // Set your goong maptiles key here
 
 function Root() {
   const [viewport, setViewport] = useState<ViewportProps>({
@@ -23,9 +23,9 @@ function Root() {
       {...viewport}
       width="100vw"
       height="100vh"
-      mapStyle="mapbox://styles/mapbox/dark-v9"
+      mapStyle="https://tiles.goong.io/assets/goong_map_dark.json"
       onViewportChange={(nextViewport: ViewportProps) => setViewport(nextViewport)}
-      mapboxApiAccessToken={MAPBOX_TOKEN}
+      goongApiAccessToken={GOONG_MAPTILES_KEY}
     >
       <NavigationControl
       // showCompass="true" // should generate error

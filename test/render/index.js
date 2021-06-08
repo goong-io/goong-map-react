@@ -1,7 +1,7 @@
 /* global window, document, FontFace */
 import test from 'tape-promise/tape';
 import * as React from 'react';
-import MapGL from 'react-map-gl';
+import MapGL from '@goongmaps/goong-map-react';
 import {render, unmountComponentAtNode} from 'react-dom';
 
 import TEST_CASES from './test-cases';

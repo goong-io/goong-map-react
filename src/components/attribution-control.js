@@ -1,7 +1,7 @@
 import * as React from 'react';
 import {useEffect, useCallback, useState, useRef, useMemo} from 'react';
 import * as PropTypes from 'prop-types';
-import mapboxgl from '../utils/mapboxgl';
+import mapboxgl from '../utils/goongmap';
 import useMapControl, {mapControlDefaultProps, mapControlPropTypes} from './use-map-control';
 
 const propTypes = Object.assign({}, mapControlPropTypes, {

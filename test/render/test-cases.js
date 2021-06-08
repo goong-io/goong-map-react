@@ -1,6 +1,13 @@
-/* global __MAPBOX_TOKEN__ */
+/* global __GOONG_MAPTILES_KEY__ */
 import * as React from 'react';
-import {StaticMap, NavigationControl, GeolocateControl, Popup, Source, Layer} from 'react-map-gl';
+import {
+  StaticMap,
+  NavigationControl,
+  GeolocateControl,
+  Popup,
+  Source,
+  Layer
+} from '@goongmaps/goong-map-react';
 
 const EMPTY_MAP_STYLE = {
   version: 8,
@@ -27,8 +34,8 @@ export default [
   {
     title: 'Basic map',
     props: {
-      mapboxApiAccessToken: __MAPBOX_TOKEN__,
-      mapStyle: 'mapbox://styles/mapbox/dark-v9',
+      goongApiAccessToken: __GOONG_MAPTILES_KEY__,
+      mapStyle: 'https://tiles.goong.io/assets/goong_map_web.json',
       longitude: -122.4,
       latitude: 37.78,
       zoom: 12.5
@@ -37,20 +44,9 @@ export default [
     goldenImage: 'test/render/golden-images/basic-map.png'
   },
   {
-    title: 'Invalid map token',
-    props: {
-      mapboxApiAccessToken: 'invalid_token',
-      mapStyle: 'mapbox://styles/mapbox/dark-v9',
-      longitude: -122.4,
-      latitude: 37.78,
-      zoom: 12.5
-    },
-    mapError: /access token/
-  },
-  {
     title: 'Custom tile server',
     props: {
-      mapboxApiAccessToken: __MAPBOX_TOKEN__,
+      goongApiAccessToken: __GOONG_MAPTILES_KEY__,
       mapStyle: 'http://localhost:5000/test/data/style.json',
       longitude: -122.4,
       latitude: 37.78,
@@ -63,7 +59,7 @@ export default [
     title: 'NavigationControl',
     Component: StaticMap,
     props: {
-      mapboxApiAccessToken: __MAPBOX_TOKEN__,
+      goongApiAccessToken: __GOONG_MAPTILES_KEY__,
       mapStyle: EMPTY_MAP_STYLE,
       longitude: -122.4,
       latitude: 37.78,
@@ -81,7 +77,7 @@ export default [
     title: 'Popup',
     Component: StaticMap,
     props: {
-      mapboxApiAccessToken: __MAPBOX_TOKEN__,
+      goongApiAccessToken: __GOONG_MAPTILES_KEY__,
       mapStyle: EMPTY_MAP_STYLE,
       longitude: -122.4,
       latitude: 37.78,
@@ -109,7 +105,7 @@ export default [
     title: 'JSX Source/Layer',
     Component: StaticMap,
     props: {
-      mapboxApiAccessToken: __MAPBOX_TOKEN__,
+      goongApiAccessToken: __GOONG_MAPTILES_KEY__,
       mapStyle: EMPTY_MAP_STYLE,
       longitude: -122.4,
       latitude: 37.78,
@@ -130,7 +126,7 @@ export default [
     title: 'JSX Source/Layer toggle style',
     Component: StaticMap,
     props: {
-      mapboxApiAccessToken: __MAPBOX_TOKEN__,
+      goongApiAccessToken: __GOONG_MAPTILES_KEY__,
       mapStyle: ALT_EMPTY_MAP_STYLE,
       longitude: -122.4,
       latitude: 37.78,
@@ -151,7 +147,7 @@ export default [
     title: 'JSX Source/Layer removal',
     Component: StaticMap,
     props: {
-      mapboxApiAccessToken: __MAPBOX_TOKEN__,
+      goongApiAccessToken: __GOONG_MAPTILES_KEY__,
       mapStyle: ALT_EMPTY_MAP_STYLE,
       longitude: -122.4,
       latitude: 37.78,
@@ -164,7 +160,7 @@ export default [
     title: 'GeolocateControl',
     Component: StaticMap,
     props: {
-      mapboxApiAccessToken: __MAPBOX_TOKEN__,
+      goongApiAccessToken: __GOONG_MAPTILES_KEY__,
       mapStyle: EMPTY_MAP_STYLE,
       longitude: -122.4,
       latitude: 37.78,
@@ -180,4 +176,4 @@ export default [
     },
     goldenImage: 'test/render/golden-images/geolocate-control.png'
   }
-].filter(testCase => testCase.props.mapboxApiAccessToken);
+].filter(testCase => testCase.props.goongApiAccessToken);

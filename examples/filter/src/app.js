@@ -6,7 +6,7 @@ import ControlPanel from './control-panel';
 
 import {countiesLayer, highlightLayer} from './map-style.js';
 
-const MAPBOX_TOKEN = ''; // Set your mapbox token here
+const GOONG_MAPTILES_KEY = ''; // Set your goong maptiles key here
 
 export default function App() {
   const [viewport, setViewport] = useState({
@@ -37,13 +37,16 @@ export default function App() {
         {...viewport}
         width="100%"
         height="100%"
-        mapStyle="mapbox://styles/mapbox/light-v9"
-        mapboxApiAccessToken={MAPBOX_TOKEN}
+        mapStyle="https://tiles.goong.io/assets/goong_map_web.json"
+        goongApiAccessToken={GOONG_MAPTILES_KEY}
         onViewportChange={setViewport}
         onHover={onHover}
         interactiveLayerIds={['counties']}
       >
-        <Source type="vector" url="mapbox://mapbox.82pkq93d">
+        <Source
+          type="vector"
+          url={`https://tiles.goong.io/sources/base.json?api_key=${GOONG_MAPTILES_KEY}`}
+        >
           <Layer beforeId="waterway-label" {...countiesLayer} />
           <Layer beforeId="waterway-label" {...highlightLayer} filter={filter} />
         </Source>

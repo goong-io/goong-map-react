@@ -25,7 +25,7 @@ A simple example to swap drag pan and drag rotate:
 
 ```js
   /// my-map-controller.js
-  import {MapController} from 'react-map-gl';
+  import {MapController} from '@goongmaps/goong-map-react';
 
   export default class MyMapController extends MapController {
 
@@ -42,7 +42,7 @@ Overwrite existing event handling:
 
 ```js
   /// my-map-controller.js
-  import {MapController} from 'react-map-gl';
+  import {MapController} from '@goongmaps/goong-map-react';
 
   export default class MyMapController extends MapController {
 
@@ -62,7 +62,7 @@ Listen to additional events:
 
 ```js
   /// my-map-controller.js
-  import {MapController} from 'react-map-gl';
+  import {MapController} from '@goongmaps/goong-map-react';
 
   export default class MyMapController extends MapController {
 
@@ -86,7 +86,7 @@ Add a custom callback:
 
 ```js
   /// my-map-controller.js
-  import {MapController} from 'react-map-gl';
+  import {MapController} from '@goongmaps/goong-map-react';
 
   export default class MyMapController extends MapController {
 

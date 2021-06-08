@@ -8,7 +8,7 @@ import ControlPanel from './control-panel';
 import MapController from './map-controller';
 const customController = new MapController();
 
-const MAPBOX_TOKEN = ''; // Set your mapbox token here
+const GOONG_MAPTILES_KEY = ''; // Set your goong maptiles key here
 
 export default function App() {
   const [viewport, setViewport] = useState({
@@ -34,13 +34,13 @@ export default function App() {
         {...viewport}
         width="100%"
         height="100%"
-        mapStyle="mapbox://styles/mapbox/dark-v9"
+        mapStyle="https://tiles.goong.io/assets/goong_map_dark.json"
         controller={customController}
         invertZoom={settings.invertZoom}
         invertPan={settings.invertPan}
         onPress={settings.longPress ? () => window.alert('pressed') : null} // eslint-disable-line no-alert
         onViewportChange={setViewport}
-        mapboxApiAccessToken={MAPBOX_TOKEN}
+        goongApiAccessToken={GOONG_MAPTILES_KEY}
       />
       <ControlPanel settings={settings} onChange={onSettingsChange} />
     </>

@@ -3,7 +3,7 @@ import {useRef, useEffect, useState, useCallback, useMemo} from 'react';
 import * as PropTypes from 'prop-types';
 
 import {document} from '../utils/globals';
-import mapboxgl from '../utils/mapboxgl';
+import mapboxgl from '../utils/goongmap';
 
 import MapState from '../utils/map-state';
 import {LINEAR_TRANSITION_PROPS} from '../utils/map-controller';
@@ -166,7 +166,7 @@ function GeolocateControl(props) {
 
   useEffect(() => {
     if (mapboxGeolocateControl) {
-      mapboxGeolocateControl._onZoom();
+      // mapboxGeolocateControl._onZoom();
     }
   }, [context.viewport.zoom]);
 

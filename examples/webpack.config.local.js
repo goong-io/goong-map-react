@@ -31,7 +31,10 @@ const LOCAL_DEVELOPMENT_CONFIG = {
     alias: {
       // Imports the react-map-gl library from the src directory in this repo
       'react-map-gl': SRC_DIR,
-      '../utils/mapboxgl': resolve(LIB_DIR, './node_modules/mapbox-gl/dist/mapbox-gl-dev.js'),
+      '../utils/goongmap': resolve(
+        LIB_DIR,
+        './node_modules/@goongmaps/goong-js/dist/goong-js-dev.js'
+      ),
       react: resolve(LIB_DIR, './node_modules/react')
     }
   },
@@ -51,7 +54,7 @@ const LOCAL_DEVELOPMENT_CONFIG = {
     ]
   },
   // Optional: Enables reading mapbox token from environment variable
-  plugins: [new webpack.EnvironmentPlugin(['MapboxAccessToken'])]
+  plugins: [new webpack.EnvironmentPlugin(['GoongAccessToken'])]
 };
 
 function addLocalDevSettings(config) {

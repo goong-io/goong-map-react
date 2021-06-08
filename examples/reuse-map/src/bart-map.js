@@ -4,7 +4,7 @@ import MapGL, {Marker} from 'react-map-gl';
 
 import bartStations from '../../.data/bart-station.json';
 
-const MAPBOX_TOKEN = ''; // Set your mapbox token here
+const GOONG_MAPTILES_KEY = ''; // Set your goong maptiles key here
 
 export default function BartMap(props) {
   const [viewport, setViewport] = useState({
@@ -21,7 +21,7 @@ export default function BartMap(props) {
   return (
     <MapGL
       {...viewport}
-      mapboxApiAccessToken={MAPBOX_TOKEN}
+      goongApiAccessToken={GOONG_MAPTILES_KEY}
       mapStyle={props.mapStyle}
       width="100%"
       height="100%"

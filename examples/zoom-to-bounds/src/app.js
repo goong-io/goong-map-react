@@ -7,7 +7,7 @@ import bbox from '@turf/bbox';
 import ControlPanel from './control-panel';
 import MAP_STYLE from './map-style';
 
-const TOKEN = ''; // Set your mapbox token here
+const TOKEN = ''; // Set your goong maptiles key here
 
 export default function App() {
   const [viewport, setViewport] = useState({
@@ -58,7 +58,7 @@ export default function App() {
         interactiveLayerIds={['sf-neighborhoods-fill']}
         onClick={onClick}
         onViewportChange={v => setViewport(v)}
-        mapboxApiAccessToken={TOKEN}
+        goongApiAccessToken={TOKEN}
       />
       <ControlPanel />
     </>

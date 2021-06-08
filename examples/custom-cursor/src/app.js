@@ -6,7 +6,7 @@ import MapGL from 'react-map-gl';
 import ControlPanel from './control-panel';
 import MAP_STYLE from '../../map-style-basic-v8.json';
 
-const MAPBOX_TOKEN = ''; // Set your mapbox token here
+const GOONG_MAPTILES_KEY = ''; // Set your goong maptiles key here
 
 function getCursor({isHovering, isDragging}) {
   return isDragging ? 'grabbing' : isHovering ? 'pointer' : 'default';
@@ -46,7 +46,7 @@ export default function App() {
         getCursor={getCursor}
         interactiveLayerIds={interactiveLayerIds}
         onViewportChange={setViewport}
-        mapboxApiAccessToken={MAPBOX_TOKEN}
+        goongApiAccessToken={GOONG_MAPTILES_KEY}
       />
       <ControlPanel onChange={onInteractiveLayersChange} />
     </>

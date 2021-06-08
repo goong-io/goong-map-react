@@ -7,7 +7,7 @@ import {Editor, DrawPolygonMode, EditingMode} from 'react-map-gl-draw';
 import ControlPanel from './control-panel';
 import {getFeatureStyle, getEditHandleStyle} from './style';
 
-const TOKEN = ''; // Set your mapbox token here
+const TOKEN = ''; // Set your goong maptiles key here
 
 export default function App() {
   const [viewport, setViewport] = useState({
@@ -62,8 +62,8 @@ export default function App() {
         {...viewport}
         width="100%"
         height="100%"
-        mapStyle="mapbox://styles/mapbox/satellite-v9"
-        mapboxApiAccessToken={TOKEN}
+        mapStyle="https://tiles.goong.io/assets/goong_map_web.json"
+        goongApiAccessToken={TOKEN}
         onViewportChange={setViewport}
       >
         <Editor

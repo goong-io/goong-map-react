@@ -7,7 +7,7 @@ Implements the `TransitionInterpolator` interface. Designed to use with the `tra
 This interpolator offers similar behavior to Mapbox's `flyTo` method.
 
 ```jsx
-import ReactMapGL, {FlyToInterpolator} from 'react-map-gl';
+import ReactMapGL, {FlyToInterpolator} from '@goongmaps/goong-map-react';
 
 <ReactMapGL
     ...

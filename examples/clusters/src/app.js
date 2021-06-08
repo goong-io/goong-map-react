@@ -6,7 +6,7 @@ import MapGL, {Source, Layer} from 'react-map-gl';
 import ControlPanel from './control-panel';
 import {clusterLayer, clusterCountLayer, unclusteredPointLayer} from './layers';
 
-const MAPBOX_TOKEN = ''; // Set your mapbox token here
+const GOONG_MAPTILES_KEY = ''; // Set your goong maptiles key here
 
 export default function App() {
   const [viewport, setViewport] = useState({
@@ -45,9 +45,9 @@ export default function App() {
         {...viewport}
         width="100%"
         height="100%"
-        mapStyle="mapbox://styles/mapbox/dark-v9"
+        mapStyle="https://tiles.goong.io/assets/goong_map_dark.json"
         onViewportChange={setViewport}
-        mapboxApiAccessToken={MAPBOX_TOKEN}
+        goongApiAccessToken={GOONG_MAPTILES_KEY}
         interactiveLayerIds={[clusterLayer.id]}
         onClick={onClick}
         ref={mapRef}
@@ -55,7 +55,7 @@ export default function App() {
         <Source
           id="earthquakes"
           type="geojson"
-          data="https://docs.mapbox.com/mapbox-gl-js/assets/earthquakes.geojson"
+          data="https://docs.goong.io/assets/earthquakes.geojson"
           cluster={true}
           clusterMaxZoom={14}
           clusterRadius={50}

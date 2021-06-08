@@ -6,7 +6,7 @@ This is a React equivalent of Mapbox's [FullscreenControl](https://www.mapbox.co
 
 ```js
 import * as React from 'react';
-import ReactMapGL, {FullscreenControl} from 'react-map-gl';
+import ReactMapGL, {FullscreenControl} from '@goongmaps/goong-map-react';
 
 const fullscreenControlStyle= {
   right: 10,

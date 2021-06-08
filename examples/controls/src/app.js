@@ -15,7 +15,7 @@ import CityInfo from './city-info';
 
 import CITIES from '../../.data/cities.json';
 
-const TOKEN = ''; // Set your mapbox token here
+const TOKEN = ''; // Set your goong maptiles key here
 
 const geolocateStyle = {
   top: 0,
@@ -57,9 +57,9 @@ export default function App() {
         {...viewport}
         width="100%"
         height="100%"
-        mapStyle="mapbox://styles/mapbox/dark-v9"
+        mapStyle="https://tiles.goong.io/assets/goong_map_dark.json"
         onViewportChange={setViewport}
-        mapboxApiAccessToken={TOKEN}
+        goongApiAccessToken={TOKEN}
       >
         <Pins data={CITIES} onClick={setPopupInfo} />
 

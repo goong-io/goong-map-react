@@ -24,8 +24,8 @@ import * as PropTypes from 'prop-types';
 import WebMercatorViewport from 'viewport-mercator-project';
 import ResizeObserver from 'resize-observer-polyfill';
 
-import Mapbox from '../mapbox/mapbox';
-import mapboxgl from '../utils/mapboxgl';
+import Mapbox from '../goong/goong';
+import mapboxgl from '../utils/goongmap';
 import {checkVisibilityConstraints} from '../utils/map-constraints';
 import {MAPBOX_LIMITS} from '../utils/map-state';
 import MapContext, {MapContextProvider} from './map-context';

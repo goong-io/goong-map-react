@@ -1,6 +1,6 @@
 /* global setTimeout */
 import test from 'tape-catch';
-import debounce from 'react-map-gl/utils/debounce';
+import debounce from '@goongmaps/goong-map-react/utils/debounce';
 
 test('debounce', t => {
   const funcCalled = [];

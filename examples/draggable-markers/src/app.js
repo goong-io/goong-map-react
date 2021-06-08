@@ -6,7 +6,7 @@ import MapGL, {Marker, NavigationControl} from 'react-map-gl';
 import ControlPanel from './control-panel';
 import Pin from './pin';
 
-const TOKEN = ''; // Set your mapbox token here
+const TOKEN = ''; // Set your goong maptiles key here
 
 const navStyle = {
   position: 'absolute',
@@ -51,9 +51,9 @@ export default function App() {
         {...viewport}
         width="100%"
         height="100%"
-        mapStyle="mapbox://styles/mapbox/dark-v9"
+        mapStyle="https://tiles.goong.io/assets/goong_map_dark.json"
         onViewportChange={setViewport}
-        mapboxApiAccessToken={TOKEN}
+        goongApiAccessToken={TOKEN}
       >
         <Marker
           longitude={marker.longitude}

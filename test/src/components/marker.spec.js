@@ -1,11 +1,11 @@
-import {Marker} from 'react-map-gl';
+import {Marker} from '@goongmaps/goong-map-react';
 import * as React from 'react';
 import ReactTestRenderer from 'react-test-renderer';
 import WebMercatorViewport from 'viewport-mercator-project';
 import sinon from 'sinon';
 import test from 'tape-catch';
 
-import {_MapContext as MapContext} from 'react-map-gl';
+import {_MapContext as MapContext} from '@goongmaps/goong-map-react';
 
 const mockStaticContext = {
   viewport: new WebMercatorViewport({

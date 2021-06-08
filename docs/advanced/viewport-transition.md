@@ -1,6 +1,6 @@
 # Viewport Transition
 
-`react-map-gl` does not expose the transition API from `mapbox-gl-js` since it is designed to be a stateless component, and needs to synchronize with separate overlay systems such as deck.gl.
+`@goongmaps/goong-map-react` does not expose the transition API from `goong-js` since it is designed to be a stateless component, and needs to synchronize with separate overlay systems such as deck.gl.
 
 Instead, transitions can be defined using [InteractiveMap](/docs/api-reference/interactive-map.md)'s transition props.
 
@@ -8,7 +8,7 @@ Instead, transitions can be defined using [InteractiveMap](/docs/api-reference/i
 
 ```jsx
 import * as React from 'react';
-import ReactMapGL, {FlyToInterpolator} from 'react-map-gl';
+import ReactMapGL, {FlyToInterpolator} from '@goongmaps/goong-map-react';
 // 3rd-party easing functions
 import d3 from 'd3-ease';
 
@@ -50,7 +50,7 @@ See [viewport animation](http://visgl.github.io/react-map-gl/examples/viewport-a
 You can use the `WebMercatorViewport` utility to find the target viewport that fits around a lngLat bounding box:
 
 ```js
-import {WebMercatorViewport} from 'react-map-gl';
+import {WebMercatorViewport} from '@goongmaps/goong-map-react';
 ```
 
 ```js
@@ -118,7 +118,7 @@ A `TransitionInterpolator` instance must be supplied to the `transitionInterpola
 - `initiateProps(startProps, endProps)` - called before transition starts to pre-process the start and end viewport props.
 - `interpolateProps(startProps, endProps, t)` - called to get viewport props in transition. `t` is a time factor between `[0, 1]`.
 
-react-map-gl offers two built-in interpolator classes:
+`@goongmaps/goong-map-react` offers two built-in interpolator classes:
 
 - [LinearInterpolator](/docs/api-reference/linear-interpolator.md)
 - [FlyToInterpolator](/docs/api-reference/fly-to-interpolator.md)

@@ -115,10 +115,10 @@ Background: `mapbox-gl` 0.31.0 introduced a hard dependency on Node >= v4.
 
 ```js
 // v1.0
-import MapGL, {SVGOverlay} from 'react-map-gl';
+import MapGL, {SVGOverlay} from '@goongmaps/goong-map-react';
 
 // v0.6
-import MapGL from 'react-map-gl';
+import MapGL from '@goongmaps/goong-map-react';
 import SVGOverlay from 'react-map-gl/src/api-reference/svg-overlay';.
 ```
 

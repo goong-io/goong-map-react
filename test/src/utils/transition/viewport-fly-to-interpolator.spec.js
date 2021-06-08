@@ -1,6 +1,6 @@
 import test from 'tape-catch';
-import {ViewportFlyToInterpolator} from 'react-map-gl/utils/transition';
-import {toLowPrecision} from 'react-map-gl/test/test-utils';
+import {ViewportFlyToInterpolator} from '@goongmaps/goong-map-react/utils/transition';
+import {toLowPrecision} from '@goongmaps/goong-map-react/test/test-utils';
 
 const START_PROPS = {
   width: 800,

@@ -6,7 +6,7 @@ You can inject data and mapbox native layers using the [Source](/docs/api-refere
 
 ```js
 import * as React from 'react';
-import ReactMapGL, {Source, Layer} from 'react-map-gl';
+import ReactMapGL, {Source, Layer} from '@goongmaps/goong-map-react';
 
 const geojson = {
   type: 'FeatureCollection',
@@ -53,7 +53,7 @@ They are great for creating light-weight custom drawings.
 ### Example
 
 ```js
-import {SVGOverlay} from 'react-map-gl';
+import {SVGOverlay} from '@goongmaps/goong-map-react';
 
 function redraw({project}) {
   const [cx, cy] = project([-122, 37]);

@@ -4,7 +4,7 @@ import {Component} from 'react';
 import {render} from 'react-dom';
 import MapGL from 'react-map-gl';
 
-const MAPBOX_TOKEN = ''; // Set your mapbox token here
+const GOONG_MAPTILES_KEY = ''; // Set your goong maptiles key here
 
 class Root extends Component {
   constructor(props) {
@@ -26,9 +26,9 @@ class Root extends Component {
         {...this.state.viewport}
         width="100vw"
         height="100vh"
-        mapStyle="mapbox://styles/mapbox/dark-v9"
+        mapStyle="https://tiles.goong.io/assets/goong_map_dark.json"
         onViewportChange={viewport => this.setState({viewport})}
-        mapboxApiAccessToken={MAPBOX_TOKEN}
+        goongApiAccessToken={GOONG_MAPTILES_KEY}
       />
     );
   }

@@ -8,7 +8,7 @@ PRs and bug reports are welcome, and we are actively looking for new maintainers
 
 The **master** branch is the active development branch.
 
-Building react-map-gl locally from the source requires node.js `>=8`.
+Building `@goongmaps/goong-map-react` locally from the source requires node.js `>=8`.
 We use [yarn](https://yarnpkg.com/en/docs/install) to manage the dependencies.
 
 ```bash

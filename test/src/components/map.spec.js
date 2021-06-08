@@ -1,5 +1,5 @@
 /* global setTimeout, clearTimeout */
-import MapGL, {InteractiveMap} from 'react-map-gl';
+import MapGL, {InteractiveMap} from '@goongmaps/goong-map-react';
 import * as React from 'react';
 import ReactTestUtils from 'react-test-renderer/shallow';
 import ReactTestRenderer from 'react-test-renderer';
@@ -7,7 +7,7 @@ import sinon from 'sinon';
 import test from 'tape-catch';
 import Immutable from 'immutable';
 
-const mapboxApiAccessToken = process.env._MapboxAccessToken_; // eslint-disable-line
+const goongApiAccessToken = process.env._GoongAccessToken_; // eslint-disable-line
 
 const defaultProps = {
   width: 500,
@@ -15,7 +15,7 @@ const defaultProps = {
   longitude: -122,
   latitude: 37,
   zoom: 14,
-  mapboxApiAccessToken
+  goongApiAccessToken
 };
 
 const minimalStyle = {
@@ -50,14 +50,14 @@ const TEST_CASES = [
   {
     title: 'Mapbox data without token',
     props: Object.assign({}, defaultProps, {
-      mapboxApiAccessToken: ''
+      goongApiAccessToken: ''
     }),
     shouldLoad: false
   },
   {
     title: 'Mapbox data with token (string)',
     props: Object.assign({}, defaultProps, {
-      mapStyle: 'mapbox://styles/mapbox/dark-v9'
+      mapStyle: 'https://tiles.goong.io/assets/goong_map_dark.json'
     }),
     shouldLoad: true
   },
@@ -65,7 +65,7 @@ const TEST_CASES = [
     title: 'non-Mapbox data without token (JSON)',
     props: Object.assign({}, defaultProps, {
       mapStyle: minimalStyle,
-      mapboxApiAccessToken: ''
+      goongApiAccessToken: ''
     }),
     shouldLoad: true
   },

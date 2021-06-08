@@ -6,7 +6,7 @@ This is a React equivalent of Mapbox's [AttributionControl](https://docs.mapbox.
 
 ```js
 import * as React from 'react';
-import ReactMapGL, {AttributionControl} from 'react-map-gl';
+import ReactMapGL, {AttributionControl} from '@goongmaps/goong-map-react';
 
 const attributionStyle= {
   right: 0,

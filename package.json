@@ -1,17 +1,18 @@
 {
-  "name": "react-map-gl",
-  "description": "React components for Mapbox GL JS-compatible libraries",
-  "version": "6.1.0-beta.1",
+  "name": "@goongmaps/goong-map-react",
+  "description": "A fork of react-map-gl. React components for Goong JS",
+  "version": "1.0.9",
   "keywords": [
-    "mapbox",
-    "mapbox-gl",
+    "goong",
+    "goong-io",
+    "goong-js",
     "react",
-    "react-mapbox-gl",
-    "react mapbox"
+    "goong-map-react",
+    "react goong"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/visgl/react-map-gl.git"
+    "url": "https://github.com/goong-io/goong-map-react.git"
   },
   "license": "MIT",
   "types": "src/index.d.ts",
@@ -19,10 +20,10 @@
   "module": "dist/esm/index.js",
   "esnext": "dist/es6/index.js",
   "browser": {
-    "./src/utils/mapboxgl.js": "./src/utils/mapboxgl.browser.js",
-    "./dist/es5/utils/mapboxgl.js": "./dist/es5/utils/mapboxgl.browser.js",
-    "./dist/esm/utils/mapboxgl.js": "./dist/esm/utils/mapboxgl.browser.js",
-    "./dist/es6/utils/mapboxgl.js": "./dist/es6/utils/mapboxgl.browser.js"
+    "./src/utils/goongmap.js": "./src/utils/goongmap.browser.js",
+    "./dist/es5/utils/goongmap.js": "./dist/es5/utils/goongmap.browser.js",
+    "./dist/esm/utils/goongmap.js": "./dist/esm/utils/goongmap.browser.js",
+    "./dist/es6/utils/goongmap.js": "./dist/es6/utils/goongmap.browser.js"
   },
   "files": [
     "src",
@@ -49,7 +50,7 @@
     "@babel/runtime": "^7.0.0",
     "@types/geojson": "^7946.0.7",
     "@types/mapbox-gl": "^2.0.3",
-    "mapbox-gl": "^2.3.0",
+    "@goongmaps/goong-js": "^1.0.6",
     "mjolnir.js": "^2.5.0",
     "prop-types": "^15.7.2",
     "resize-observer-polyfill": "^1.5.1",

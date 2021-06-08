@@ -25,13 +25,13 @@ module.exports = {
 
         PROJECT_TYPE: 'github',
 
-        PROJECT_NAME: 'react-map-gl',
+        PROJECT_NAME: 'goong-map-react',
         PROJECT_ORG: 'visgl',
         PROJECT_ORG_LOGO: 'images/visgl-logo.png',
         PROJECT_URL: 'https://github.com/visgl/',
-        PROJECT_DESC: 'React wrapper for Mapbox GL JS',
+        PROJECT_DESC: 'React wrapper for Goong GL JS',
         PROJECT_IMAGE: 'images/hero-sm.jpg',
-        PATH_PREFIX: '/react-map-gl',
+        PATH_PREFIX: '/goong-map-react',
 
         GA_TRACKING_ID: 'UA-74374017-2',
 
@@ -172,7 +172,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-env-variables',
       options: {
-        whitelist: ['MapboxAccessToken']
+        whitelist: ['GoongAccessToken']
       }
     }
   ]

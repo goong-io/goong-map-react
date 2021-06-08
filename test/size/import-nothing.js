@@ -1,3 +1,3 @@
-import {InteractiveMap} from 'react-map-gl';
+import {InteractiveMap} from '@goongmaps/goong-map-react';
 
 console.log(InteractiveMap); // eslint-disable-line

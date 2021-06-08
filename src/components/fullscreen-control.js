@@ -22,7 +22,7 @@ import {document} from '../utils/globals';
 import * as PropTypes from 'prop-types';
 import * as React from 'react';
 import {useEffect, useState, useMemo} from 'react';
-import mapboxgl from '../utils/mapboxgl';
+import mapboxgl from '../utils/goongmap';
 
 import useMapControl, {mapControlDefaultProps, mapControlPropTypes} from './use-map-control';
 

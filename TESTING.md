@@ -12,17 +12,17 @@ npm run test
 npm run test-browser
 ```
 
-**You'll need to specify a valid Mapbox Access Token in the URL** for the tests to pass.
+**You'll need to specify a valid Goong Maptiles Key in the URL** for the tests to pass.
 
 ```
-http://localhost:8080/?access_token=MAPBOX_ACCESS_TOKEN
+http://localhost:8080/?access_token=YOUR_MAPTILES_KEY
 ```
 
-# Bumping Mapbox Version
+# Bumping Goong Version
 
-Always pin Mapbox to a specific release.
+Always pin Goong to a specific release.
 
 The React controls (`NavigationControl`, `Popup` and `Marker`) are dependent on
-the Mapbox stylesheet, and may be broken by Mapbox updates.
-Always run `examples/controls` after bumping Mapbox version to make sure they
+the Goong stylesheet, and may be broken by Goong updates.
+Always run `examples/controls` after bumping Goong version to make sure they
 still work.

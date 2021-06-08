@@ -1,5 +1,5 @@
 import {ReactElement} from 'react';
-import type {MapboxProps} from '../mapbox/mapbox';
+import type {MapboxProps} from '../goong/goong';
 
 export type StaticMapProps = MapboxProps & Partial<{
   className: string,

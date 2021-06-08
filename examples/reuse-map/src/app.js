@@ -3,8 +3,8 @@ import {useState} from 'react';
 import {render} from 'react-dom';
 import BartMap from './bart-map';
 
-const LIGHT_STYLE = 'mapbox://styles/mapbox/light-v9';
-const DARK_STYLE = 'mapbox://styles/mapbox/dark-v9';
+const LIGHT_STYLE = 'https://tiles.goong.io/assets/goong_map_web.json';
+const DARK_STYLE = 'https://tiles.goong.io/assets/goong_map_dark.json';
 
 export default function App() {
   const [showMap, setShowMap] = useState(true);

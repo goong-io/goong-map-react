@@ -1,7 +1,7 @@
 import test from 'tape-catch';
-import MapState, {MAPBOX_LIMITS} from 'react-map-gl/utils/map-state';
+import MapState, {MAPBOX_LIMITS} from '@goongmaps/goong-map-react/utils/map-state';
 import WebMercatorViewport from 'viewport-mercator-project';
-import {toLowPrecision, isSameLocation} from 'react-map-gl/test/test-utils';
+import {toLowPrecision, isSameLocation} from '@goongmaps/goong-map-react/test/test-utils';
 
 const SAMPLE_VIEWPORTS = [
   // SF

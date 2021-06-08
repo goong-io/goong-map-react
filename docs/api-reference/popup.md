@@ -7,7 +7,7 @@ show tooltip popups with custom HTML content at specific locations on the map.
 
 ```js
 import * as React from 'react';
-import ReactMapGL, {Popup} from 'react-map-gl';
+import ReactMapGL, {Popup} from '@goongmaps/goong-map-react';
 
 function App() {
   const [viewport, setViewport] = React.useState({

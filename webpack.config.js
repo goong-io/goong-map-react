@@ -23,7 +23,7 @@ module.exports = env => {
 
   config.plugins = (config.plugins || []).concat([
     new webpack.DefinePlugin({
-      __MAPBOX_TOKEN__: JSON.stringify(process.env.MapboxAccessToken) // eslint-disable-line
+      __GOONG_MAPTILES_KEY__: JSON.stringify(process.env.GoongAccessToken) // eslint-disable-line
     })
   ]);
 

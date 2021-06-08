@@ -1,4 +1,4 @@
-import * as MapboxGL from "mapbox-gl";
+import * as GoongJS from "@goongmaps/goong-js";
 import {ReactElement, Ref} from "react";
 
 export interface LayerProps {
@@ -7,17 +7,17 @@ export interface LayerProps {
   source?: string;
   'source-layer'?: string,
   beforeId?: string;
-  layout?: MapboxGL.AnyLayout;
+  layout?: GoongJS.AnyLayout;
   paint:
-    | MapboxGL.BackgroundPaint
-    | MapboxGL.FillPaint
-    | MapboxGL.FillExtrusionPaint
-    | MapboxGL.LinePaint
-    | MapboxGL.SymbolPaint
-    | MapboxGL.RasterPaint
-    | MapboxGL.CirclePaint
-    | MapboxGL.HeatmapPaint
-    | MapboxGL.HillshadePaint;
+    | GoongJS.BackgroundPaint
+    | GoongJS.FillPaint
+    | GoongJS.FillExtrusionPaint
+    | GoongJS.LinePaint
+    | GoongJS.SymbolPaint
+    | GoongJS.RasterPaint
+    | GoongJS.CirclePaint
+    | GoongJS.HeatmapPaint
+    | GoongJS.HillshadePaint;
   filter?: any[];
   minzoom?: number;
   maxzoom?: number;

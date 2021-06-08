@@ -5,7 +5,7 @@ import MapGL, {Source, Layer} from 'react-map-gl';
 
 import ControlPanel from './control-panel';
 
-const TOKEN = ''; // Set your mapbox token here
+const TOKEN = ''; // Set your goong maptiles key here
 
 const skyLayer = {
   id: 'sky',
@@ -37,9 +37,9 @@ export default function App() {
         {...viewport}
         width="100%"
         height="100%"
-        mapStyle="mapbox://styles/mapbox/satellite-v9"
+        mapStyle="https://tiles.goong.io/assets/goong_map_web.json"
         onViewportChange={setViewport}
-        mapboxApiAccessToken={TOKEN}
+        goongApiAccessToken={TOKEN}
         onLoad={onMapLoad}
       >
         <Source

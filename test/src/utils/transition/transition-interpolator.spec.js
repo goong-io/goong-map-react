@@ -1,5 +1,5 @@
 import test from 'tape-catch';
-import {TransitionInterpolator} from 'react-map-gl/utils/transition';
+import {TransitionInterpolator} from '@goongmaps/goong-map-react/utils/transition';
 
 const TEST_CASES = [
   {

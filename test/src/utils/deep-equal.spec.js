@@ -1,6 +1,6 @@
 import test from 'tape-catch';
 
-import deepEqual from 'react-map-gl/utils/deep-equal';
+import deepEqual from '@goongmaps/goong-map-react/utils/deep-equal';
 
 test('deepEqual', t => {
   const testCases = [

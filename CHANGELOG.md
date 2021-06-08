@@ -1,5 +1,10 @@
 # CHANGELOG
 
+# Version 1.0.9 Goong
+
+- Convert code to Goong
+- Use `@goongmaps/goong-js` module
+
 # Version 6.1
 
 ## 6.1.0-beta.1 (Jan 22, 2021)

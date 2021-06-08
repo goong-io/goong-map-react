@@ -1,3 +1,4 @@
+// @flow
 // Copyright (c) 2015 Uber Technologies, Inc.
 
 // Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -36,22 +37,22 @@ const propTypes = {
   container: PropTypes.object /** The container to have the map. */,
   gl: PropTypes.object /** External WebGLContext to use */,
 
-  mapboxApiAccessToken: PropTypes.string /** Mapbox API access token for Mapbox tiles/styles. */,
-  mapboxApiUrl: PropTypes.string,
+  goongApiAccessToken: PropTypes.string /** Goong API access token for Goong tiles/styles. */,
+  goongApiUrl: PropTypes.string,
   attributionControl: PropTypes.bool /** Show attribution control or not. */,
   preserveDrawingBuffer: PropTypes.bool /** Useful when you want to export the canvas as a PNG. */,
   reuseMaps: PropTypes.bool,
   transformRequest: PropTypes.func /** The transformRequest callback for the map */,
-  mapOptions: PropTypes.object /** Extra options to pass to Mapbox constructor. See #545. **/,
+  mapOptions: PropTypes.object /** Extra options to pass to Goong constructor. See #545. **/,
   mapStyle: PropTypes.oneOfType([
     PropTypes.string,
     PropTypes.object
-  ]) /** The Mapbox style. A string url to a MapboxGL style */,
+  ]) /** The Goong style. A string url to a Goong style */,
   preventStyleDiffing:
     PropTypes.bool /** There are known issues with style diffing. As stopgap, add option to prevent style diffing. */,
 
   visible: PropTypes.bool /** Whether the map is visible */,
-  asyncRender: PropTypes.bool /** Whether mapbox should manage its own render cycle */,
+  asyncRender: PropTypes.bool /** Whether goong map should manage its own render cycle */,
 
   onLoad: PropTypes.func /** The onLoad callback for the map */,
   onError: PropTypes.func /** The onError callback for the map */,
@@ -73,13 +74,13 @@ const propTypes = {
 
 const defaultProps = {
   container: document.body,
-  mapboxApiAccessToken: getAccessToken(),
-  mapboxApiUrl: 'https://api.mapbox.com',
+  goongApiAccessToken: getAccessToken(),
+  goongApiUrl: 'https://rsapi.goong.io',
   preserveDrawingBuffer: false,
   attributionControl: true,
   reuseMaps: false,
   mapOptions: {},
-  mapStyle: 'mapbox://styles/mapbox/light-v8',
+  mapStyle: 'https://tiles.goong.io/assets/goong_map_web.json',
   preventStyleDiffing: false,
 
   visible: true,
@@ -103,17 +104,17 @@ export function getAccessToken() {
   let accessToken = null;
 
   if (typeof window !== 'undefined' && window.location) {
-    const match = window.location.search.match(/access_token=([^&\/]*)/);
+    const match = window.location.search.match(/api_key=([^&\/]*)/);
     accessToken = match && match[1];
   }
 
   if (!accessToken && typeof process !== 'undefined') {
     // Note: This depends on bundler plugins (e.g. webpack) importing environment correctly
     accessToken =
-      accessToken || process.env.MapboxAccessToken || process.env.REACT_APP_MAPBOX_ACCESS_TOKEN; // eslint-disable-line
+      accessToken || process.env.GoongAccessToken || process.env.REACT_APP_GOONG_ACCESS_TOKEN; // eslint-disable-line
   }
 
-  // Prevents mapbox from throwing
+  // Prevents goong from throwing
   return accessToken || 'no-token';
 }
 
@@ -125,13 +126,13 @@ function checkPropTypes(props, component = 'component') {
   }
 }
 
-// A small wrapper class for mapbox-gl
+// A small wrapper class for goong-js
 // - Provides a prop style interface (that can be trivially used by a React wrapper)
-// - Makes sure mapbox doesn't crash under Node
-// - Handles map reuse (to work around Mapbox resource leak issues)
+// - Makes sure goong doesn't crash under Node
+// - Handles map reuse (to work around Goong resource leak issues)
 // - Provides support for specifying tokens during development
 
-export default class Mapbox {
+export default class Goong {
   static initialized = false;
   static propTypes = propTypes;
   static defaultProps = defaultProps;
@@ -139,13 +140,13 @@ export default class Mapbox {
 
   constructor(props) {
     if (!props.mapboxgl) {
-      throw new Error('Mapbox not available');
+      throw new Error('Goong JS not available');
     }
 
     this.mapboxgl = props.mapboxgl;
 
-    if (!Mapbox.initialized) {
-      Mapbox.initialized = true;
+    if (!Goong.initialized) {
+      Goong.initialized = true;
 
       // Version detection using babel plugin
       // const VERSION = typeof __VERSION__ !== 'undefined' ? __VERSION__ : 'untranspiled source';
@@ -172,7 +173,7 @@ export default class Mapbox {
   }
 
   // Force redraw the map now. Typically resize() and jumpTo() is reflected in the next
-  // render cycle, which is managed by Mapbox's animation loop.
+  // render cycle, which is managed by Goong's animation loop.
   // This removes the synchronization issue caused by requestAnimationFrame.
   redraw() {
     const map = this._map;
@@ -205,7 +206,7 @@ export default class Mapbox {
   };
 
   _reuse(props) {
-    this._map = Mapbox.savedMap;
+    this._map = Goong.savedMap;
     // When reusing the saved map, we need to reparent the map(canvas) and other child nodes
     // intoto the new container from the props.
     // Step1: reparenting child nodes from old container to new container
@@ -217,13 +218,13 @@ export default class Mapbox {
     }
     // Step2: replace the internal container with new container from the react component
     this._map._container = newContainer;
-    Mapbox.savedMap = null;
+    Goong.savedMap = null;
 
     // Step3: update style and call onload again
     if (props.mapStyle) {
       this._map.setStyle(normalizeStyle(props.mapStyle), {
         // From the user's perspective, there's no "diffing" on initialization
-        // We always rebuild the style from scratch when creating a new Mapbox instance
+        // We always rebuild the style from scratch when creating a new Goong instance
         diff: false
       });
     }
@@ -238,7 +239,7 @@ export default class Mapbox {
 
   _create(props) {
     // Reuse a saved map, if available
-    if (props.reuseMaps && Mapbox.savedMap) {
+    if (props.reuseMaps && Goong.savedMap) {
       this._reuse(props);
     } else {
       if (props.gl) {
@@ -284,10 +285,10 @@ export default class Mapbox {
       return;
     }
 
-    if (!Mapbox.savedMap) {
-      Mapbox.savedMap = this._map;
+    if (!Goong.savedMap) {
+      Goong.savedMap = this._map;
 
-      // deregister the mapbox event listeners
+      // deregister the goong event listeners
       this._map.off('load', this.props.onLoad);
       this._map.off('error', this.props.onError);
       this._map.off('styledata', this._fireLoadEvent);
@@ -300,11 +301,11 @@ export default class Mapbox {
 
   _initialize(props) {
     props = Object.assign({}, defaultProps, props);
-    checkPropTypes(props, 'Mapbox');
+    checkPropTypes(props, 'Goong');
 
     // Creation only props
-    this.mapboxgl.accessToken = props.mapboxApiAccessToken || defaultProps.mapboxApiAccessToken;
-    this.mapboxgl.baseApiUrl = props.mapboxApiUrl;
+    this.mapboxgl.accessToken = props.goongApiAccessToken || defaultProps.goongApiAccessToken;
+    this.mapboxgl.baseApiUrl = props.goongApiUrl;
 
     this._create(props);
 
@@ -339,7 +340,7 @@ export default class Mapbox {
     }
 
     newProps = Object.assign({}, this.props, newProps);
-    checkPropTypes(newProps, 'Mapbox');
+    checkPropTypes(newProps, 'Goong');
 
     const viewportChanged = this._updateMapViewport(oldProps, newProps);
     const sizeChanged = this._updateMapSize(oldProps, newProps);
@@ -401,12 +402,12 @@ export default class Mapbox {
     return {longitude, latitude, zoom, pitch, bearing, altitude};
   }
 
-  _checkStyleSheet(mapboxVersion = '0.47.0') {
+  _checkStyleSheet(goongVersion = '1.0.6') {
     if (typeof document === 'undefined') {
       return;
     }
 
-    // check mapbox styles
+    // check goong styles
     try {
       const testElement = document.createElement('div');
       testElement.className = 'mapboxgl-map';
@@ -415,13 +416,13 @@ export default class Mapbox {
       const isCssLoaded = window.getComputedStyle(testElement).position !== 'static';
 
       if (!isCssLoaded) {
-        // attempt to insert mapbox stylesheet
+        // attempt to insert goong stylesheet
         const link = document.createElement('link');
         link.setAttribute('rel', 'stylesheet');
         link.setAttribute('type', 'text/css');
         link.setAttribute(
           'href',
-          `https://api.tiles.mapbox.com/mapbox-gl-js/v${mapboxVersion}/mapbox-gl.css`
+          `https://cdn.jsdelivr.net/npm/@goongmaps/goong-js@${goongVersion}/dist/goong-js.css`
         );
         document.head.appendChild(link);
       }

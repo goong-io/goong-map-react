@@ -4,7 +4,7 @@ import {render} from 'react-dom';
 import MapGL from 'react-map-gl';
 import ControlPanel from './control-panel';
 
-const MAPBOX_TOKEN = ''; // Set your mapbox token here
+const GOONG_MAPTILES_KEY = ''; // Set your goong maptiles key here
 
 export default function App() {
   const [viewport, setViewport] = useState({
@@ -45,10 +45,10 @@ export default function App() {
         {...settings}
         width="100%"
         height="100%"
-        mapStyle="mapbox://styles/mapbox/dark-v9"
+        mapStyle="https://tiles.goong.io/assets/goong_map_dark.json"
         onViewportChange={setViewport}
         onInteractionStateChange={s => setInteractionState({...s})}
-        mapboxApiAccessToken={MAPBOX_TOKEN}
+        goongApiAccessToken={GOONG_MAPTILES_KEY}
       />
       <ControlPanel
         settings={settings}

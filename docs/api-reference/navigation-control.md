@@ -7,7 +7,7 @@ which provides zoom buttons and a compass button.
 
 ```js
 import * as React from 'react';
-import ReactMapGL, {NavigationControl} from 'react-map-gl';
+import ReactMapGL, {NavigationControl} from '@goongmaps/goong-map-react';
 
 const navControlStyle= {
   right: 10,

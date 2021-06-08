@@ -6,7 +6,7 @@ This is a React equivalent of Mapbox's [ScaleControl](https://docs.mapbox.com/ma
 
 ```js
 import * as React from 'react';
-import ReactMapGL, {ScaleControl} from 'react-map-gl';
+import ReactMapGL, {ScaleControl} from '@goongmaps/goong-map-react';
 
 const scaleControlStyle= {
   left: 20,

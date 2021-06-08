@@ -30,7 +30,7 @@ import ChoroplethOverlay from './choropleth-overlay';
 import ZIPCODES_SF from '../../.data/feature-example-sf.json';
 import CITIES from '../../.data/cities.json';
 
-const MAPBOX_TOKEN = ''; // Set your mapbox token here
+const GOONG_MAPTILES_KEY = ''; // Set your goong maptiles key here
 
 const ZIPCODES = ZIPCODES_SF.features.map(f => {
   f.properties.value = Math.random() * 1000;
@@ -53,9 +53,9 @@ export default function App() {
       {...viewport}
       width="100vw"
       height="100vh"
-      mapStyle="mapbox://styles/mapbox/dark-v9"
+      mapStyle="https://tiles.goong.io/assets/goong_map_dark.json"
       onViewportChange={setViewport}
-      mapboxApiAccessToken={MAPBOX_TOKEN}
+      goongApiAccessToken={GOONG_MAPTILES_KEY}
     >
       <ChoroplethOverlay
         key="choropleth"

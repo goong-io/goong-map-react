@@ -6,7 +6,7 @@ import MapGL, {Source, Layer} from 'react-map-gl';
 
 import ControlPanel from './control-panel';
 
-const MAPBOX_TOKEN = ''; // Set your mapbox token here
+const GOONG_MAPTILES_KEY = ''; // Set your goong maptiles key here
 
 const pointLayer = {
   type: 'circle',
@@ -46,9 +46,9 @@ export default function App() {
         {...viewport}
         width="100%"
         height="100%"
-        mapStyle="mapbox://styles/mapbox/light-v9"
+        mapStyle="https://tiles.goong.io/assets/goong_map_web.json"
         onViewportChange={setViewport}
-        mapboxApiAccessToken={MAPBOX_TOKEN}
+        goongApiAccessToken={GOONG_MAPTILES_KEY}
       >
         {pointData && (
           <Source type="geojson" data={pointData}>

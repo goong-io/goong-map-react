@@ -31,6 +31,6 @@ module.exports = {
   // Optional: Enables reading mapbox token from environment variable
   plugins: [
     new HtmlWebpackPlugin({title: 'react-map-gl Example'}),
-    new webpack.EnvironmentPlugin(['MapboxAccessToken'])
+    new webpack.EnvironmentPlugin(['GoongAccessToken'])
   ]
 };

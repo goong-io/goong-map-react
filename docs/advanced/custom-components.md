@@ -8,7 +8,7 @@ The following component renders a label "(longitude, latitude)" at the given coo
 
 ```js
 import * as React from 'react';
-import MapGL, {MapContext} from 'react-map-gl';
+import MapGL, {MapContext} from '@goongmaps/goong-map-react';
 
 function CustomMarker(props) {
   const context = React.useContext(MapContext);
@@ -33,7 +33,7 @@ function CustomMarker(props) {
 
 function App() {
   return (
-    <MapGL longitude={-122.45} latitude={37.78} zoom={12} mapboxApiAccessToken={MAPBOX_TOKEN}>
+    <MapGL longitude={-122.45} latitude={37.78} zoom={12} goongApiAccessToken={GOONG_MAPTILES_KEY}>
       <CustomeMarker longitude={-122.45} latitude={37.78} />
     </MapGL>
   )
@@ -46,7 +46,7 @@ function App() {
 
 ```js
 import * as React from 'react';
-import MapGL, {_useMapControl as useMapControl} from 'react-map-gl';
+import MapGL, {_useMapControl as useMapControl} from '@goongmaps/goong-map-react';
 
 function CustomControl(props) {
   const [counter, setCounter] = React.useState(0);
@@ -71,7 +71,7 @@ function CustomControl(props) {
 
 function App() {
   return (
-    <MapGL longitude={-122.45} latitude={37.78} zoom={12} mapboxApiAccessToken={MAPBOX_TOKEN}>
+    <MapGL longitude={-122.45} latitude={37.78} zoom={12} goongApiAccessToken={GOONG_MAPTILES_KEY}>
       <CustomControl />
     </MapGL>
   )

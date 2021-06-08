@@ -16,7 +16,7 @@ export const clusterCountLayer = {
   filter: ['has', 'point_count'],
   layout: {
     'text-field': '{point_count_abbreviated}',
-    'text-font': ['DIN Offc Pro Medium', 'Arial Unicode MS Bold'],
+    'text-font': ['Roboto Regular'],
     'text-size': 12
   }
 };

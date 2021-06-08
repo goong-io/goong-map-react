@@ -5,7 +5,7 @@
 ![Since v5.2.2](https://img.shields.io/badge/since-v5.2.2-green)
 
 ```js
-import {setRTLTextPlugin} from 'react-map-gl';
+import {setRTLTextPlugin} from '@goongmaps/goong-map-react';
 
 setRTLTextPlugin(
   // find out the latest version at https://www.npmjs.com/package/@mapbox/mapbox-gl-rtl-text
@@ -26,7 +26,7 @@ To use this API, consult Mapbox's [setRTLTextPlugin](https://docs.mapbox.com/map
 You can use the `WebMercatorViewport` utility to find the target viewport that fits around a longitude-latitude bounding box:
 
 ```js
-import {WebMercatorViewport} from 'react-map-gl';
+import {WebMercatorViewport} from '@goongmaps/goong-map-react';
 
 const viewport = new WebMercatorViewport({width: 800, height: 600})
     .fitBounds([[-122.4, 37.7], [-122.5, 37.8]], {

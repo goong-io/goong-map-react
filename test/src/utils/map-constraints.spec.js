@@ -1,5 +1,5 @@
 import test from 'tape-catch';
-import {checkVisibilityConstraints} from 'react-map-gl/utils/map-constraints';
+import {checkVisibilityConstraints} from '@goongmaps/goong-map-react/utils/map-constraints';
 
 const TEST_CASES = [
   {

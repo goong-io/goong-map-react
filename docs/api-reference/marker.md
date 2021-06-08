@@ -8,7 +8,7 @@ be used to render custom icons at specific locations on the map.
 
 ```js
 import * as React from 'react';
-import ReactMapGL, {Marker} from 'react-map-gl';
+import ReactMapGL, {Marker} from '@goongmaps/goong-map-react';
 
 function App() {
   const [viewport, setViewport] = React.useState({
@@ -30,7 +30,7 @@ Performance notes: if a large number of markers are needed, it's generally favor
 
 ```js
 import * as React from 'react';
-import ReactMapGL, {Marker} from 'react-map-gl';
+import ReactMapGL, {Marker} from '@goongmaps/goong-map-react';
 
 function App(props) {
   const [viewport, setViewport] = React.useState({

@@ -14,7 +14,7 @@ npm install --save react-map-gl
 ```js
 import * as React from 'react';
 import { useState } from 'react';
-import ReactMapGL from 'react-map-gl';
+import ReactMapGL from '@goongmaps/goong-map-react';
 
 function Map() {
   const [viewport, setViewport] = useState({

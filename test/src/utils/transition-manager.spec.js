@@ -1,10 +1,10 @@
 import test from 'tape-catch';
 import {equals} from '../../test-utils';
-import TransitionManager from 'react-map-gl/utils/transition-manager';
-import {cropEasingFunction} from 'react-map-gl/utils/transition-manager';
-import {TRANSITION_EVENTS} from 'react-map-gl/utils/transition-manager';
-import LinearInterpolator from 'react-map-gl/utils/transition/linear-interpolator';
-import ViewportFlyToInterpolator from 'react-map-gl/utils/transition/viewport-fly-to-interpolator';
+import TransitionManager from '@goongmaps/goong-map-react/utils/transition-manager';
+import {cropEasingFunction} from '@goongmaps/goong-map-react/utils/transition-manager';
+import {TRANSITION_EVENTS} from '@goongmaps/goong-map-react/utils/transition-manager';
+import LinearInterpolator from '@goongmaps/goong-map-react/utils/transition/linear-interpolator';
+import ViewportFlyToInterpolator from '@goongmaps/goong-map-react/utils/transition/viewport-fly-to-interpolator';
 
 /* global global, setTimeout, clearTimeout */
 // backfill requestAnimationFrame on Node

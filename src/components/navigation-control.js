@@ -5,8 +5,6 @@ import * as PropTypes from 'prop-types';
 import MapState from '../utils/map-state';
 import {LINEAR_TRANSITION_PROPS} from '../utils/map-controller';
 
-import {compareVersions} from '../utils/version';
-
 import useMapControl, {mapControlDefaultProps, mapControlPropTypes} from './use-map-control';
 
 const noop = () => {};
@@ -38,14 +36,6 @@ const defaultProps = Object.assign({}, mapControlDefaultProps, {
   compassLabel: 'Reset North'
 });
 
-// Mapbox version flags. CSS classes were changed in certain versions.
-const VERSION_LEGACY = 1;
-const VERSION_1_6 = 2;
-
-function getUIVersion(mapboxVersion) {
-  return compareVersions(mapboxVersion, '1.6.0') >= 0 ? VERSION_1_6 : VERSION_LEGACY;
-}
-
 function updateViewport(context, props, opts) {
   const {viewport} = context;
   const mapState = new MapState(Object.assign({}, viewport, opts));
@@ -76,18 +66,10 @@ function renderButton(type, label, callback, children) {
 }
 
 function renderCompass(context) {
-  const uiVersion = useMemo(() => (context.map ? getUIVersion(context.map.version) : VERSION_1_6), [
-    context.map
-  ]);
-
   const {bearing} = context.viewport;
   const style = {transform: `rotate(${-bearing}deg)`};
 
-  return uiVersion === VERSION_1_6 ? (
-    <span className="mapboxgl-ctrl-icon" aria-hidden="true" style={style} />
-  ) : (
-    <span className="mapboxgl-ctrl-compass-arrow" style={style} />
-  );
+  return <span className="mapboxgl-ctrl-icon" aria-hidden="true" style={style} />;
 }
 
 /*

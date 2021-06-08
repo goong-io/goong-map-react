@@ -6,7 +6,7 @@ This component allows apps to create a [map source](https://docs.mapbox.com/mapb
 
 ```js
 import * as React from 'react';
-import ReactMapGL, {Source, Layer} from 'react-map-gl';
+import ReactMapGL, {Source, Layer} from '@goongmaps/goong-map-react';
 
 const geojson = {
   type: 'FeatureCollection',
@@ -44,7 +44,7 @@ function App() {
 
 The props provided to this component should be conforming to the [Mapbox source specification](https://docs.mapbox.com/mapbox-gl-js/style-spec/#sources)or [CanvasSourceOptions](https://docs.mapbox.com/mapbox-gl-js/api/#canvassourceoptions).
 
-Note that the map component's [mapStyle](/docs/api-reference/static-map.md#mapstyle) prop defaults to `mapbox://styles/mapbox/light-v8`. To use an empty base map with your own sources, you need to override the prop, e.g.:
+Note that the map component's [mapStyle](/docs/api-reference/static-map.md#mapstyle) prop defaults to `https://tiles.goong.io/assets/goong_map_web.json`. To use an empty base map with your own sources, you need to override the prop, e.g.:
 
 ```js
 const EMPTY_STYLE = {

@@ -7,7 +7,7 @@ import ControlPanel from './control-panel';
 import {dataLayer} from './map-style.js';
 import {updatePercentiles} from './utils';
 
-const MAPBOX_TOKEN = ''; // Set your mapbox token here
+const GOONG_MAPTILES_KEY = ''; // Set your goong maptiles key here
 
 export default function App() {
   const [viewport, setViewport] = useState({
@@ -58,9 +58,9 @@ export default function App() {
         {...viewport}
         width="100%"
         height="100%"
-        mapStyle="mapbox://styles/mapbox/light-v9"
+        mapStyle="https://tiles.goong.io/assets/goong_map_web.json"
         onViewportChange={setViewport}
-        mapboxApiAccessToken={MAPBOX_TOKEN}
+        goongApiAccessToken={GOONG_MAPTILES_KEY}
         interactiveLayerIds={['data']}
         onHover={onHover}
       >

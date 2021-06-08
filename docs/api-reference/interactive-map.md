@@ -8,7 +8,7 @@ This is the `default` exported component from `react-map-gl`.
 
 ```js
 import * as React from 'react';
-import ReactMapGL from 'react-map-gl';
+import ReactMapGL from '@goongmaps/goong-map-react';
 
 function App() {
   const [viewport, setViewport] = React.useState({
@@ -31,8 +31,8 @@ Inherit the following props from [StaticMap](/docs/api-reference/static-map.md):
 - `attributionControl` (Boolean)
 - `disableTokenWarning` (Boolean)
 - `gl` (WebGLContext)
-- `mapboxApiAccessToken` (String)
-- `mapboxApiUrl` (String)
+- `goongApiAccessToken` (String)
+- `goongApiUrl` (String)
 - `mapOptions` (Object)
 - `preserveDrawingBuffer` (Boolean)
 - `preventStyleDiffing` (Boolean)
@@ -242,7 +242,7 @@ An interpolator object that defines the transition behavior between two map stat
 
 You may import them as follows:
 ```jsx
-import ReactMapGL, {LinearInterpolator, FlyToInterpolator} from 'react-map-gl';
+import ReactMapGL, {LinearInterpolator, FlyToInterpolator} from '@goongmaps/goong-map-react';
 
 <ReactMapGL transitionDuration={1000} transitionInterpolator={new FlyToInterpolator()}>
 ```
@@ -268,7 +268,7 @@ What to do if an ongoing transition is interrupted by another transition. There 
 You may import the constants as follows:
 
 ```js
-import {TRANSITION_EVENTS} from 'react-map-gl';
+import {TRANSITION_EVENTS} from '@goongmaps/goong-map-react';
 ```
 
 

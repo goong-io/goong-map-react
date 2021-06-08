@@ -1,6 +1,6 @@
 import test from 'tape-catch';
 
-import {compareVersions} from 'react-map-gl/utils/version';
+import {compareVersions} from '@goongmaps/goong-map-react/utils/version';
 
 test('compareVersions', t => {
   const TEST_CASES = [

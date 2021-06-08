@@ -6,7 +6,7 @@
 
 ```js
 import * as React from 'react';
-import MapGL, {MapContext} from 'react-map-gl';
+import MapGL, {MapContext} from '@goongmaps/goong-map-react';
 
 function CurrentZoomLevel() {
   const context = React.useContext(MapContext);
@@ -29,7 +29,7 @@ It is also possible to consume `MapContext` outside the map component, if you re
 
 ```js
 import * as React from 'react';
-import MapGL, {MapContext} from 'react-map-gl';
+import MapGL, {MapContext} from '@goongmaps/goong-map-react';
 
 function MyComponent() {
   const {map} = React.useContext(MapContext);

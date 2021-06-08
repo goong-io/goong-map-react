@@ -8,7 +8,7 @@ that supports full user interactivity, see [InteractiveMap](/docs/api-reference/
 
 ```js
 import * as React from 'react';
-import {StaticMap} from 'react-map-gl';
+import {StaticMap} from '@goongmaps/goong-map-react';
 
 function App() {
   return (
@@ -46,12 +46,12 @@ If the provided API access token is rejected by Mapbox, `StaticMap` renders a wa
 
 Use an existing WebGLContext instead of creating a new one. This allows multiple libraries to render into a shared buffer. Use with caution.
 
-##### `mapboxApiAccessToken` (String)
+##### `goongApiAccessToken` (String)
 
 Mapbox API access token for `MapboxGL`. Required when using Mapbox vector tiles/styles
 Mapbox WebGL context creation option. Useful when you want to export the canvas as a PNG
 
-##### `mapboxApiUrl` (String)
+##### `goongApiUrl` (String)
 
 - default: `https://api.mapbox.com`
 
@@ -103,7 +103,7 @@ Expected to return an object with a `url` property and optionally `headers` and 
 
 ##### `mapStyle` (String | Object | Immutable.Map)
 
-- default: `'mapbox://styles/mapbox/light-v8'`
+- default: `'https://tiles.goong.io/assets/goong_map_web.json'`
 
 The Mapbox style. A string url or a
 [MapboxGL style](https://www.mapbox.com/mapbox-gl-style-spec/#layer-interactive)
