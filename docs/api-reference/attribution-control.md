@@ -2,7 +2,7 @@
 
 ![Since v5.3](https://img.shields.io/badge/since-v5.3-green)
 
-This is a React equivalent of Mapbox's [AttributionControl](https://docs.mapbox.com/mapbox-gl-js/api/#attributioncontrol).
+This is a React equivalent of Goong's [AttributionControl](https://docs.goong.io/javascript/markers/#attributioncontrol).
 
 ```js
 import * as React from 'react';
@@ -86,8 +86,8 @@ Stop propagation of pointermove event to the map component. Can be used to stop 
 
 ## Styling
 
-Like its Mapbox counterpart, this control relies on the mapbox-gl stylesheet to work properly. Make sure to add the stylesheet to your page.
+Like its Goong counterpart, this control relies on the goong-js stylesheet to work properly. Make sure to add the stylesheet to your page.
 
 ## Source
 
-[attribution-control.js](https://github.com/visgl/react-map-gl/tree/6.0-release/src/components/attribution-control.js)
+[attribution-control.js](https://github.com/goong-io/goong-map-react/tree/master/src/components/attribution-control.js)

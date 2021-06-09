@@ -9,7 +9,7 @@ For basemaps:
 
 New to `@goongmaps/goong-map-react`? [Get Started](/docs/get-started/get-started.md)
 
-Want to contribute? See our [Developer Guide](/docs/developer-guide.md)
+Want to contribute? See our [Developer Guide](/docs/contributing)
 
 
 ## Design Philosophy

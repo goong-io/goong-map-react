@@ -63,7 +63,7 @@ function App() {
 
 The context value object may contain the following fields:
 
-- `map` (Map) - the mapbox-gl [Map]((https://www.mapbox.com/mapbox-gl-js/api/#map)) instance
+- `map` (Map) - the goong-js [Map](https://docs.goong.io/) instance
 - `viewport` (WebMercatorViewport) - the current viewport
 - `container` (HTMLDivElement) - the outer container of the map component
 - `onViewportChange` (Function) - a callback invoked when a map control requests a viewport change, with the signature `onViewportChange(viewState, interactionState, oldViewState)`
@@ -73,4 +73,4 @@ The context value object may contain the following fields:
 
 ## Source
 
-[map-context.js](https://github.com/visgl/react-map-gl/tree/6.0-release/src/components/map-context.js)
+[map-context.js](https://github.com/goong-io/goong-map-react/tree/master/src/components/map-context.js)

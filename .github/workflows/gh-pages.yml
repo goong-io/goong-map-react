@@ -1,0 +1,35 @@
+name: gh-pages
+
+on:
+  push:
+    branches:
+      - 'main'
+
+jobs:
+  publish-website:
+    runs-on: ubuntu-latest
+
+
+    env:
+      GoongAccessToken: ${{ secrets.GOONG_MAPTILES_KEY }}
+
+    steps:
+      - uses: actions/checkout@v2.1.1
+
+      - name: Use Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: '12.x'
+      - name: Build website
+        run: |
+          yarn bootstrap
+          cd website
+          yarn
+          yarn build
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@3.7.1
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH: gh-pages
+          FOLDER: website/public
+          CLEAN: true

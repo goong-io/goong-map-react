@@ -1,4 +1,4 @@
-# Contributing to react-map-gl
+# Contributing to goong-map-react
 
 **Thanks for taking the time to contribute!**
 
@@ -39,7 +39,7 @@ $ npm run test browser
 
 Any intended change to the code base must open a [pull request](https://help.github.com/articles/creating-a-pull-request/) and be approved. 
 
-Generally speaking, all PRs are open against the `master` branch, unless the feature being affected no longer exists on master.
+Generally speaking, all PRs are open against the `main` branch, unless the feature being affected no longer exists on master.
 
 ### PR Checklist
 
@@ -84,4 +84,4 @@ This mailing list can also be utilized to reach out to the TSC.
 
 ## Code of Conduct
 
-Please be mindful of and adhere to the Linux Foundation's [Code of Conduct](https://lfprojects.org/policies/code-of-conduct/) when contributing to react-map-gl.
+Please be mindful of and adhere to the Linux Foundation's [Code of Conduct](https://lfprojects.org/policies/code-of-conduct/) when contributing to goong-map-react.

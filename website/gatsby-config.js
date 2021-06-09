@@ -26,14 +26,14 @@ module.exports = {
         PROJECT_TYPE: 'github',
 
         PROJECT_NAME: 'goong-map-react',
-        PROJECT_ORG: 'visgl',
+        PROJECT_ORG: 'goong-io',
         PROJECT_ORG_LOGO: 'images/visgl-logo.png',
-        PROJECT_URL: 'https://github.com/visgl/',
+        PROJECT_URL: 'https://github.com/goong-io/goong-map-react/',
         PROJECT_DESC: 'React wrapper for Goong GL JS',
-        PROJECT_IMAGE: 'images/hero-sm.jpg',
+        PROJECT_IMAGE: 'images/hero.png',
         PATH_PREFIX: '/goong-map-react',
 
-        GA_TRACKING_ID: 'UA-74374017-2',
+        GA_TRACKING_ID: '',
 
         // For showing star counts and contributors.
         // Should be like btoa('YourUsername:YourKey') and should be readonly.
@@ -43,26 +43,22 @@ module.exports = {
 
         PROJECTS: [
           {
-            name: 'deck.gl',
-            url: 'https://deck.gl'
+            name: 'goong-js',
+            url: 'https://github.com/goong-io/goong-js'
           },
           {
-            name: 'luma.gl',
-            url: 'https://luma.gl'
+            name: 'goong-geocoder',
+            url: 'https://github.com/goong-io/goong-geocoder-js'
           },
           {
-            name: 'loaders.gl',
-            url: 'https://loaders.gl'
-          },
-          {
-            name: 'nebula.gl',
-            url: 'https://nebula.gl/'
+            name: 'goong-sdk-js',
+            url: 'https://github.com/goong-io/goong-sdk'
           }
         ],
 
         LINK_TO_GET_STARTED: '/docs/get-started/get-started',
 
-        ADDITIONAL_LINKS: [{name: 'Blog', href: 'http://medium.com/vis-gl', index: 4}],
+        ADDITIONAL_LINKS: [{name: 'Goong', href: 'https://goong.io', index: 4}],
 
         INDEX_PAGE_URL: resolve(__dirname, './src/home.js'),
 
@@ -150,19 +146,13 @@ module.exports = {
             image: 'images/example-draw-polygon.jpg',
             componentUrl: resolve(__dirname, '../examples/draw-polygon/src/app.js'),
             path: 'examples/draw-polygon'
-          },
-          {
-            title: 'Terrain',
-            image: 'images/example-terrain.jpg',
-            componentUrl: resolve(__dirname, '../examples/terrain/src/app.js'),
-            path: 'examples/terrain'
           }
         ],
 
         THEME_OVERRIDES: require('./src/theme.json'),
 
         STYLESHEETS: [
-          'https://api.tiles.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.css',
+          'https://cdn.jsdelivr.net/npm/@goongmaps/goong-js/dist/goong-js.css',
           'https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-draw/v1.0.9/mapbox-gl-draw.css',
           '/style.css'
         ]

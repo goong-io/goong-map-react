@@ -14,9 +14,9 @@ function getCursor({isHovering, isDragging}) {
 
 export default function App() {
   const [viewport, setViewport] = useState({
-    longitude: -122.48,
-    latitude: 37.78,
-    zoom: 15.5,
+    latitude: 21.02727,
+    longitude: 105.85119,
+    zoom: 13,
     bearing: 0,
     pitch: 0
   });

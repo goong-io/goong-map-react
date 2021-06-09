@@ -7,15 +7,15 @@
     "sources": {
       "base": {
         "type": "vector",
-        "url": "https://tiles.goong.io/sources/base.json?api_key={}"
+        "url": "https://tiles.goong.io/sources/base.json?api_key=8qzxZAuxcsctSlmOszInchP1A5GrmRBHJwCBCjO6"
       },
       "composite": {
         "type": "vector",
-        "url": "https://tiles.goong.io/sources/goong.json?api_key={}}"
+        "url": "https://tiles.goong.io/sources/goong.json?api_key=8qzxZAuxcsctSlmOszInchP1A5GrmRBHJwCBCjO6"
       }
     },
     "sprite": "https://tiles.goong.io/sprite",
-    "glyphs": "https://tiles.goong.io/fonts/{fontstack}/{range}.pbf?api_key={}}",
+    "glyphs": "https://tiles.goong.io/fonts/{fontstack}/{range}.pbf?api_key=8qzxZAuxcsctSlmOszInchP1A5GrmRBHJwCBCjO6",
     "layers": [
       {
         "id": "background",

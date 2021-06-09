@@ -1,5 +1,5 @@
 {
-  "name": "react-map-gl-website",
+  "name": "goong-map-react-website",
   "scripts": {
     "start": "yarn clean && yarn develop",
     "build": "yarn clean-examples && yarn clean && gatsby build --prefix-paths",

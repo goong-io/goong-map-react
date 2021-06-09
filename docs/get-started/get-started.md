@@ -34,7 +34,7 @@ function Map() {
 }
 ```
 
-See full project setup in [get-started examples](https://github.com/visgl/react-map-gl/tree/6.0-release/examples/get-started)
+See full project setup in [get-started examples](https://github.com/goong-io/goong-map-react/tree/master/examples/get-started)
 
 ## Styling
 
@@ -43,7 +43,7 @@ The current mapbox-gl release requires its stylesheet be included at all times. 
 You may add the stylesheet to the head of your page:
 ```html
 <!-- index.html -->
-<link href='https://api.tiles.mapbox.com/mapbox-gl-js/v<YOUR_MAPBOX_VERSION>/mapbox-gl.css' rel='stylesheet' />
+<link href='https://cdn.jsdelivr.net/npm/@goongmaps/goong-js/dist/goong-js.css' rel='stylesheet' />
 ```
 
 Find out your mapbox version by running `yarn list mapbox-gl` or `npm ls mapbox-gl`.
@@ -53,58 +53,18 @@ with Browserify or - [css-loader](https://webpack.github.io/docs/stylesheets.htm
 
 ```js
 // app.js
-import 'mapbox-gl/dist/mapbox-gl.css';
+import '@goongmaps/goong-js/dist/goong-js.css';
 ```
 
 ## Using with Browserify, Webpack, and other JavaScript Bundlers
 
 * `browserify` - react-map-gl is extensively tested with `browserify` and works without configuration.
 
-* `webpack` - Most of the provided react-map-gl examples use webpack. Look at the [get started examples](https://github.com/visgl/react-map-gl/tree/6.0-release/examples/get-started) folder for minimalist templates.
+* `webpack` - Most of the provided react-map-gl examples use webpack. Look at the [get started examples](https://github.com/goong-io/goong-map-react/tree/master/examples/get-started) folder for minimalist templates.
 
 * `create-react-app` - react-map-gl is compatible with [create-react-app](https://github.com/facebook/create-react-app).
 
 * `create-react-app-typescript` - react-map-gl is compatible with [create-react-app-typescript](https://github.com/wmonk/create-react-app-typescript). You can see an example [here](https://github.com/zackhsi/react-map-gl-typescript).
 
-There's many other ready-to-run [examples](https://github.com/visgl/react-map-gl/tree/6.0-release/examples) you can take a look at if you need more inspiration.
+There's many other ready-to-run [examples](https://github.com/goong-io/goong-map-react/tree/master/examples) you can take a look at if you need more inspiration.
 
-
-## Using with a mapbox-gl Fork
-
-Install your choice of fork along with react-map-gl, for example:
-
-```bash
-npm i react-map-gl maplibre-gl
-```
-
-In your bundler's configuration, set the forked library to replace any reference from mapbox-gl. This can be done in Webpack with something like:
-
-```js
-// webpack.config.js
-module.export = {
-  // ...
-  resolve: {
-    alias: {
-      'mapbox-gl': 'maplibre-gl'
-    }
-  }
-}
-```
-
-In rollup:
-
-```js
-// rollup.config.js
-import alias from '@rollup/plugin-alias';
-
-module.exports = {
-  // ...
-  plugins: [
-    alias({
-      entries: [
-        { find: 'mapbox-gl', replacement: 'maplibre-gl' },
-      ]
-    })
-  ]
-};
-```

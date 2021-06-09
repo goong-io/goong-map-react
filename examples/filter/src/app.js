@@ -41,14 +41,14 @@ export default function App() {
         goongApiAccessToken={GOONG_MAPTILES_KEY}
         onViewportChange={setViewport}
         onHover={onHover}
-        interactiveLayerIds={['counties']}
+        interactiveLayerIds={['place-country-1']}
       >
         <Source
           type="vector"
           url={`https://tiles.goong.io/sources/base.json?api_key=${GOONG_MAPTILES_KEY}`}
         >
-          <Layer beforeId="waterway-label" {...countiesLayer} />
-          <Layer beforeId="waterway-label" {...highlightLayer} filter={filter} />
+          <Layer beforeId="water" {...countiesLayer} />
+          <Layer beforeId="water" {...highlightLayer} filter={filter} />
         </Source>
         {selectedCounty && (
           <Popup

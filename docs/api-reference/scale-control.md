@@ -2,7 +2,7 @@
 
 ![Since v5.2](https://img.shields.io/badge/since-v5.2-green)
 
-This is a React equivalent of Mapbox's [ScaleControl](https://docs.mapbox.com/mapbox-gl-js/api/#scalecontrol).
+This is a React equivalent of Goong's [ScaleControl](https://docs.goong.io/javascript/markers/#scalecontrol).
 
 ```js
 import * as React from 'react';
@@ -83,8 +83,8 @@ Stop propagation of pointermove event to the map component. Can be used to stop 
 
 ## Styling
 
-Like its Mapbox counterpart, this control relies on the mapbox-gl stylesheet to work properly. Make sure to add the stylesheet to your page.
+Like its Goong counterpart, this control relies on the goong-js stylesheet to work properly. Make sure to add the stylesheet to your page.
 
 ## Source
 
-[scale-control.js](https://github.com/visgl/react-map-gl/tree/6.0-release/src/components/scale-control.js)
+[scale-control.js](https://github.com/goong-io/goong-map-react/tree/master/src/components/scale-control.js)

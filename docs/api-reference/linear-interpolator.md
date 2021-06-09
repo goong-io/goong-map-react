@@ -4,7 +4,7 @@
 
 Implements the `TransitionInterpolator` interface. Designed to use with the `transitionInterpolator` prop of [InteractiveMap](/docs/api-reference/interactive-map.md).
 
-Interpolates all viewport props linearly. This interpolator offers similar behavior to Mapbox's `easeTo` when combined with a `transitionEasing` function. You may optionally limit the transition to selected viewport props, for example `new LinearInterpolator(['pitch', 'bearing'])` animates pitch and bearing while the user is still allowed to pan and zoom.
+Interpolates all viewport props linearly. This interpolator offers similar behavior to Goong's `easeTo` when combined with a `transitionEasing` function. You may optionally limit the transition to selected viewport props, for example `new LinearInterpolator(['pitch', 'bearing'])` animates pitch and bearing while the user is still allowed to pan and zoom.
 
 ```jsx
 import ReactMapGL, {LinearInterpolator} from '@goongmaps/goong-map-react';
@@ -27,5 +27,5 @@ Parameters:
 
 ## Source
 
-[linear-interpolator.js](https://github.com/visgl/react-map-gl/tree/6.0-release/src/utils/transition/linear-interpolator.js)
+[linear-interpolator.js](https://github.com/goong-io/goong-map-react/tree/master/src/utils/transition/linear-interpolator.js)
 

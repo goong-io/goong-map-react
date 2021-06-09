@@ -48,7 +48,7 @@ module.exports.onCreateWebpackConfig = function onCreateWebpackConfigOverride(op
           .find(u => u.loader && u.loader.includes("babel-loader"));
       if (!rule.include && loader && loader.options) {
         loader.options.ignore = [
-          resolve(__dirname, '../node_modules/mapbox-gl/dist/mapbox-gl.js')
+          resolve(__dirname, '../node_modules/@goongmaps/goong-js/dist/goong-js.js')
         ];
       }
     }

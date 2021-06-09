@@ -2,9 +2,9 @@
 
 ![Since v3.0](https://img.shields.io/badge/since-v3.0-green)
 
-This component renders `MapboxGL` and provides full interactivity support.
+This component renders `Goong JS` and provides full interactivity support.
 It uses `StaticMap` underneath to render the final map component.
-This is the `default` exported component from `react-map-gl`.
+This is the `default` exported component from `goong-map-react`.
 
 ```js
 import * as React from 'react';
@@ -236,9 +236,9 @@ Duration of transition in milliseconds. If specified, the map's viewport will sm
 
 - default: `new LinearInterpolator()`
 
-An interpolator object that defines the transition behavior between two map states. `react-map-gl` offers two interpolators:
-- `LinearInterpolator` - similar to Mapbox's `easeTo` behavior.
-- `FlyToInterpolator` - similar to Mapbox's `flyTo` behavior.
+An interpolator object that defines the transition behavior between two map states. `goong-map-react` offers two interpolators:
+- `LinearInterpolator` - similar to Goong's `easeTo` behavior.
+- `FlyToInterpolator` - similar to Goong's `flyTo` behavior.
 
 You may import them as follows:
 ```jsx
@@ -409,4 +409,4 @@ Inherit the following methods from [StaticMap](/docs/api-reference/static-map.md
 
 ## Source
 
-[interactive-map.js](https://github.com/visgl/react-map-gl/tree/6.0-release/src/components/interactive-map.js)
+[interactive-map.js](https://github.com/goong-io/goong-map-react/tree/master/src/components/interactive-map.js)

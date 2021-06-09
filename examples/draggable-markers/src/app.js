@@ -17,15 +17,15 @@ const navStyle = {
 
 export default function App() {
   const [viewport, setViewport] = useState({
-    latitude: 40,
-    longitude: -100,
-    zoom: 3.5,
+    latitude: 21.02727,
+    longitude: 105.85119,
+    zoom: 12,
     bearing: 0,
     pitch: 0
   });
   const [marker, setMarker] = useState({
-    latitude: 40,
-    longitude: -100
+    latitude: 21.02727,
+    longitude: 105.85119,
   });
   const [events, logEvents] = useState({});
 

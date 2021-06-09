@@ -8,9 +8,9 @@ const GOONG_MAPTILES_KEY = ''; // Set your goong maptiles key here
 
 export default function App() {
   const [viewport, setViewport] = useState({
-    latitude: 37.805,
-    longitude: -122.447,
-    zoom: 15.5,
+    latitude: 21.02727,
+    longitude: 105.85119,
+    zoom: 12,
     bearing: 0,
     pitch: 0
   });

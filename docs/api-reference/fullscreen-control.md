@@ -2,7 +2,7 @@
 
 ![Since v4.1](https://img.shields.io/badge/since-v4.1-green)
 
-This is a React equivalent of Mapbox's [FullscreenControl](https://www.mapbox.com/mapbox-gl-js/api/#fullscreencontrol).
+This is a React equivalent of Goong's [FullscreenControl](https://docs.goong.io/javascript/markers/#fullscreencontrol).
 
 ```js
 import * as React from 'react';
@@ -81,8 +81,8 @@ Stop propagation of pointermove event to the map component. Can be used to stop 
 
 ## Styling
 
-Like its Mapbox counterpart, this control relies on the mapbox-gl stylesheet to work properly. Make sure to add the stylesheet to your page.
+Like its Goong counterpart, this control relies on the goong-js stylesheet to work properly. Make sure to add the stylesheet to your page.
 
 ## Source
-[fullscreen-control.js](https://github.com/visgl/react-map-gl/tree/6.0-release/src/components/fullscreen-control.js)
+[fullscreen-control.js](https://github.com/goong-io/goong-map-react/tree/master/src/components/fullscreen-control.js)
 

@@ -2,7 +2,7 @@
 
 ![Since v5.1](https://img.shields.io/badge/since-v5.1-green)
 
-This component allows apps to create a [map layer](https://docs.mapbox.com/mapbox-gl-js/style-spec/#layers) using React.
+This component allows apps to create a [map layer](https://docs.goong.io/style-spec/layers/) using React.
 
 ```js
 import * as React from 'react';
@@ -11,7 +11,7 @@ import ReactMapGL, {Layer} from '@goongmaps/goong-map-react';
 const parkLayer = {
   id: 'landuse_park',
   type: 'fill',
-  source: 'mapbox',
+  source: 'base',
   'source-layer': 'landuse',
   filter: ['==', 'class', 'park']
 };
@@ -34,7 +34,7 @@ function App() {
 
 ## Properties
 
-The props provided to this component should be conforming to the [Mapbox layer specification](https://docs.mapbox.com/mapbox-gl-js/style-spec/#layers).
+The props provided to this component should be conforming to the [Goong layer specification](https://docs.goong.io/style-spec/layers/).
 
 When props change *shallowly*, the component will perform style diffing to update the layer. Avoid defining constant objects/arrays inline may help performance.
 
@@ -60,10 +60,10 @@ Note that layers are added by the order that they mount. They are *NOT* reordere
 
 ##### `source` (String)
 
-`source` is required by some layer types in the Mapbox style specification. If `<Layer>` is used as the child of a [Source](/docs/api-reference/source.md) component, this prop will be overwritten by the id of the parent source.
+`source` is required by some layer types in the Goong style specification. If `<Layer>` is used as the child of a [Source](/docs/api-reference/source.md) component, this prop will be overwritten by the id of the parent source.
 
 
 ## Source
 
-[layer.js](https://github.com/visgl/react-map-gl/tree/6.0-release/src/components/layer.js)
+[layer.js](https://github.com/goong-io/goong-map-react/tree/master/src/components/layer.js)
 

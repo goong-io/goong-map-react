@@ -13,7 +13,7 @@ const Icon = styled.img`
 `;
 
 const HeroExample = styled.div`
-  background-image: url(images/hero.jpg);
+  background-image: url(images/hero.png);
   background-size: cover;
   background-position: center;
   height: 100%;
@@ -33,7 +33,7 @@ export default class IndexPage extends React.Component {
       <Home HeroExample={HeroExample}>
         <ContentContainer>
           <h2>
-            react-map-gl makes using Mapbox GL JS in React applications easy.
+            goong-map-react makes using Goong GL JS in React applications easy.
           </h2>
 
           <h3>
@@ -41,7 +41,7 @@ export default class IndexPage extends React.Component {
             React Integration
           </h3>
           <p>
-          Integration on browser and Node.js, exposing the full power of mapbox-gl.
+          Integration on browser and Node.js, exposing the full power of goong-js.
           </p>
 
           <h3>
@@ -49,7 +49,7 @@ export default class IndexPage extends React.Component {
             Component Library
           </h3>
           <p>
-          react-map-gl comes with additional React components that
+          goong-map-react comes with additional React components that
           synchronize with the map camera system. Use one of the supported
           overlays to visualize data, or build your own.
           </p>
@@ -64,7 +64,7 @@ export default class IndexPage extends React.Component {
             target="_blank"
             rel="noopener noreferrer">
             deck.gl</a> to render performant and compelling 2D and 3D
-            WebGL visualizations on top of your Mapbox GL JS based maps.
+            WebGL visualizations on top of your Goong JS based maps.
           </p>
 
         </ContentContainer>

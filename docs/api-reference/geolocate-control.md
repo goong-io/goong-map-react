@@ -2,7 +2,7 @@
 
 ![Since v4.1](https://img.shields.io/badge/since-v4.1-green)
 
-This is a React equivalent of Mapbox's [GeolocateControl](https://www.mapbox.com/mapbox-gl-js/api/#geolocatecontrol).
+This is a React equivalent of Goong's [GeolocateControl](https://docs.goong.io/javascript/markers/#geolocatecontrol).
 
 ```js
 import * as React from 'react';
@@ -34,7 +34,7 @@ function App() {
 
 ## Properties
 
-Accepts all the options of [Mapbox GeolocateControl](https://docs.mapbox.com/mapbox-gl-js/api/#geolocatecontrol).
+Accepts all the options of [Goong GeolocateControl](https://docs.goong.io/javascript/markers/#geolocatecontrol).
 
 ##### `onViewportChange` (Function, optional)
 
@@ -135,8 +135,8 @@ Stop propagation of pointermove event to the map component. Can be used to stop 
 
 ## Styling
 
-Like its Mapbox counterpart, this control relies on the mapbox-gl stylesheet to work properly. Make sure to add the stylesheet to your page.
+Like its Goong counterpart, this control relies on the goong-js stylesheet to work properly. Make sure to add the stylesheet to your page.
 
 ## Source
 
-[geolocate-control.js](https://github.com/visgl/react-map-gl/tree/6.0-release/src/components/geolocate-control.js)
+[geolocate-control.js](https://github.com/goong-io/goong-map-react/tree/master/src/components/geolocate-control.js)

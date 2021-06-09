@@ -2,7 +2,7 @@
 
 ![Since v3.0](https://img.shields.io/badge/since-v3.0-green)
 
-This is a React equivalent of Mapbox's [NavigationControl](https://www.mapbox.com/mapbox-gl-js/api/#navigationcontrol),
+This is a React equivalent of Goong's [NavigationControl](https://docs.goong.io/javascript/markers/#navigationcontrol),
 which provides zoom buttons and a compass button.
 
 ```js
@@ -107,9 +107,9 @@ Stop propagation of pointermove event to the map component. Can be used to stop 
 
 ## Styling
 
-Like its Mapbox counterpart, this control relies on the mapbox-gl stylesheet to work properly. Make sure to add the stylesheet to your page.
+Like its Goong counterpart, this control relies on the goong-js stylesheet to work properly. Make sure to add the stylesheet to your page.
 
 ## Source
 
-[navigation-control.js](https://github.com/visgl/react-map-gl/tree/6.0-release/src/components/navigation-control.js)
+[navigation-control.js](https://github.com/goong-io/goong-map-react/tree/master/src/components/navigation-control.js)
 

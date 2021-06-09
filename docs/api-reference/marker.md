@@ -2,8 +2,8 @@
 
 ![Since v3.0](https://img.shields.io/badge/since-v3.0-green)
 
-This is a React equivalent of Mapbox's
-[Marker Control](https://www.mapbox.com/mapbox-gl-js/api/#marker), which can
+This is a React equivalent of Goong's
+[Marker Control](https://docs.goong.io/javascript/markers/), which can
 be used to render custom icons at specific locations on the map.
 
 ```js
@@ -146,9 +146,9 @@ Stop propagation of pointermove event to the map component. Can be used to stop 
 
 ## Styling
 
-Like its Mapbox counterpart, this control relies on the mapbox-gl stylesheet to work properly. Make sure to add the stylesheet to your page.
+Like its Goong counterpart, this control relies on the goong-js stylesheet to work properly. Make sure to add the stylesheet to your page.
 
 ## Source
 
-[marker.js](https://github.com/visgl/react-map-gl/tree/6.0-release/src/components/marker.js)
+[marker.js](https://github.com/goong-io/goong-map-react/tree/master/src/components/marker.js)
 

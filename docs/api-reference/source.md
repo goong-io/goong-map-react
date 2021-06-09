@@ -2,7 +2,7 @@
 
 ![Since v5.1](https://img.shields.io/badge/since-v5.1-green)
 
-This component allows apps to create a [map source](https://docs.mapbox.com/mapbox-gl-js/style-spec/#sources) using React. It may contain [Layer](/docs/api-reference/layer.md) components as children.
+This component allows apps to create a [map source](https://docs.goong.io/style-spec/sources/) using React. It may contain [Layer](/docs/api-reference/layer.md) components as children.
 
 ```js
 import * as React from 'react';
@@ -42,7 +42,7 @@ function App() {
 
 ## Properties
 
-The props provided to this component should be conforming to the [Mapbox source specification](https://docs.mapbox.com/mapbox-gl-js/style-spec/#sources)or [CanvasSourceOptions](https://docs.mapbox.com/mapbox-gl-js/api/#canvassourceoptions).
+The props provided to this component should be conforming to the [Goong source specification](https://docs.goong.io/style-spec/sources/) or [CanvasSourceOptions](https://docs.goong.io/javascript/sources/#canvassourceoptions).
 
 Note that the map component's [mapStyle](/docs/api-reference/static-map.md#mapstyle) prop defaults to `https://tiles.goong.io/assets/goong_map_web.json`. To use an empty base map with your own sources, you need to override the prop, e.g.:
 
@@ -70,4 +70,4 @@ Type of the source.
 
 ## Source
 
-[source.js](https://github.com/visgl/react-map-gl/tree/6.0-release/src/components/source.js)
+[source.js](https://github.com/goong-io/goong-map-react/tree/master/src/components/source.js)

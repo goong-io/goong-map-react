@@ -8,7 +8,7 @@ assignees: ''
 
 #### Description
 
-<!-- A clear and concise description of what the bug is, and what the expected behavior is. Be sure to check before the relevant sections at http://visgl.github.io/react-map-gl/docs and the issues list at https://github.com/visgl/react-map-gl/issues -->
+<!-- A clear and concise description of what the bug is, and what the expected behavior is. Be sure to check before the relevant sections at https://docs.goong.io/goong-map-react and the issues list at https://github.com/goong-io/goong-map-react/issues -->
 
 #### Repro Steps
 

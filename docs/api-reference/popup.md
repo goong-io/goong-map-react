@@ -2,7 +2,7 @@
 
 ![Since v3.0](https://img.shields.io/badge/since-v3.0-green)
 
-This is a React equivalent of Mapbox's [Popup Control](https://www.mapbox.com/mapbox-gl-js/api/#popup), which can be used to
+This is a React equivalent of Goong's [Popup Control](https://docs.goong.io/javascript/markers/#popup), which can be used to
 show tooltip popups with custom HTML content at specific locations on the map.
 
 ```js
@@ -138,9 +138,9 @@ Stop propagation of pointermove event to the map component. Can be used to stop 
 
 ## Styling
 
-Like its Mapbox counterpart, this control relies on the mapbox-gl stylesheet to work properly. Make sure to add the stylesheet to your page.
+Like its Goong counterpart, this control relies on the goong-js stylesheet to work properly. Make sure to add the stylesheet to your page.
 
 ## Source
 
-[popup.js](https://github.com/visgl/react-map-gl/tree/6.0-release/src/components/popup.js)
+[popup.js](https://github.com/goong-io/goong-map-react/tree/master/src/components/popup.js)
 
