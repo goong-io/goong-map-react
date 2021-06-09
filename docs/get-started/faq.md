@@ -16,9 +16,9 @@ setRTLTextPlugin(
 );
 ```
 
-This is the same as `import {setRTLTextPlugin} from 'mapbox-gl'` in the browser, but will not crash in node. The export mainly offers a convenience when using server-side rendering.
+This is the same as `import {setRTLTextPlugin} from '@goongmaps/goong-map-react'` in the browser, but will not crash in node. The export mainly offers a convenience when using server-side rendering.
 
-To use this API, consult Mapbox's [setRTLTextPlugin](https://docs.mapbox.com/mapbox-gl-js/api/#setrtltextplugin) documentation.
+To use this API, consult Mapbox's [setRTLTextPlugin](https://docs.goong.io/javascript/properties/#setrtltextplugin) documentation.
 
 
 ## Where is fitBounds?

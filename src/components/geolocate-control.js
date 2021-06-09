@@ -23,8 +23,8 @@ const propTypes = Object.assign({}, mapControlPropTypes, {
   // Auto trigger instead of waiting for click
   auto: PropTypes.bool,
 
-  // mapbox geolocate options
-  // https://docs.mapbox.com/mapbox-gl-js/api/#geolocatecontrol
+  // goong geolocate options
+  // https://docs.goong.io/javascript/markers/#geolocatecontrol
   positionOptions: PropTypes.object,
   fitBoundsOptions: PropTypes.object,
   trackUserLocation: PropTypes.bool,

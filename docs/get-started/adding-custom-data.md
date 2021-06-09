@@ -40,14 +40,14 @@ function App() {
 }
 ```
 
-For details about data sources and layer configuration, check out the [Mapbox style specification](https://www.mapbox.com/mapbox-gl-js/style-spec).
+For details about data sources and layer configuration, check out the [Goong style specification](https://docs.goong.io/style-spec/).
 
-For dynamically updating data sources and layers, check out the [GeoJSON](http://visgl.github.io/react-map-gl/examples/geojson) and [GeoJSON animation](http://visgl.github.io/react-map-gl/examples/geojson-animation) examples.
+For dynamically updating data sources and layers, check out the [GeoJSON](https://github.com/goong-io/goong-map-react/tree/main/examples/geojson) and [GeoJSON animation](https://github.com/goong-io/goong-map-react/tree/main/examples/geojson-animation) examples.
 
 
 ## Overlays
 
-react-map-gl provides a basic overlay API that enables applications to overlay data on top of maps.
+`goong-map-react` provides a basic overlay API that enables applications to overlay data on top of maps.
 They are great for creating light-weight custom drawings.
 
 ### Example

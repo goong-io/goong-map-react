@@ -51,7 +51,7 @@ function ControlPanel(props) {
       <hr />
       <p>
         Data source:{' '}
-        <a href="https://docs.mapbox.com/mapbox-gl-js/assets/earthquakes.geojson">
+        <a href="https://docs.goong.io/assets/earthquakes.geojson">
           earthquakes.geojson
         </a>
       </p>

@@ -38,7 +38,7 @@ export default function App() {
 
   useEffect(() => {
     /* global fetch */
-    fetch('https://docs.mapbox.com/mapbox-gl-js/assets/earthquakes.geojson')
+    fetch('https://docs.goong.io/assets/earthquakes.geojson')
       .then(resp => resp.json())
       .then(json => {
         // Note: In a real application you would do a validation of JSON data before doing anything with it,

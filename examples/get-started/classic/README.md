@@ -4,7 +4,7 @@ This example shows a minimal app configuration to use react-map-gl with a React 
 
 ## Usage
 
-To run this example, you need a [Mapbox token](http://visgl.github.io/react-map-gl/docs/get-started/mapbox-tokens). You can either set it as `GOONG_MAPTILES_KEY` in `app.js`, or set a `GoongAccessToken` environment variable in the command line.
+To run this example, you need a [Goong Maptiles Key](https://account.goong.io). You can either set it as `GOONG_MAPTILES_KEY` in `app.js`, or set a `GoongAccessToken` environment variable in the command line.
 
 ```bash
 npm i
