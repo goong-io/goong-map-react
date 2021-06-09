@@ -3,10 +3,10 @@
 
 ## Installation
 
-Using `react-map-gl` requires `node >= v4` and `react >= 16.3`.
+Using `@goongmaps/goong-map-react` requires `node >= v4` and `react >= 16.3`.
 
 ```sh
-npm install --save react-map-gl
+npm install --save @goongmaps/goong-map-react
 ```
 
 ## Example
