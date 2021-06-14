@@ -6,7 +6,7 @@ This is a React equivalent of Goong's [GeolocateControl](https://docs.goong.io/j
 
 ```js
 import * as React from 'react';
-import ReactMapGL, {GeolocateControl} from "react-map-gl";
+import ReactMapGL, {GeolocateControl} from '@goongmaps/goong-map-react';
 
 const geolocateControlStyle= {
   right: 10,
