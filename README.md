@@ -1,5 +1,5 @@
 [![npm](https://img.shields.io/npm/v/@goongmaps/goong-map-react.svg)](https://npmjs.org/package/@goongmaps/goong-map-react)
-## @goongmaps/goong-map-react | [Documentation](/docs)
+## @goongmaps/goong-map-react | [Documentation](https://docs.goong.io/goong-map-react)
 
 `@goongmaps/goong-map-react` is a fork of [react-map-gl](https://github.com/visgl/react-map-gl). It provides React components for [Goong GL JS](https://github.com/goong-io/goong-js). More information in the online documentation.
 

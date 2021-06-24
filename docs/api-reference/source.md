@@ -70,4 +70,4 @@ Type of the source.
 
 ## Source
 
-[source.js](https://github.com/goong-io/goong-map-react/tree/master/src/components/source.js)
+[source.js](https://github.com/goong-io/goong-map-react/tree/main/src/components/source.js)

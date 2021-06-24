@@ -1,7 +1,7 @@
 import * as React from 'react';
 import {render} from 'react-dom';
 import DeckGL, {ArcLayer} from 'deck.gl';
-import {StaticMap, MapContext, AttributionControl} from 'react-map-gl';
+import {StaticMap, MapContext, AttributionControl} from '@goongmaps/goong-map-react';
 
 const TOKEN = ''; // Set your goong maptiles key here
 
@@ -26,7 +26,7 @@ export default function App() {
       }}
       controller={true}
       layers={[arcLayer]}
-      // This is required when using react-map-gl controls as children
+      // This is required when using @goongmaps/goong-map-react controls as children
       ContextProvider={MapContext.Provider}
     >
       <StaticMap goongApiAccessToken={TOKEN} attributionControl={false} />

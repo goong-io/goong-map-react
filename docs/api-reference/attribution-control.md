@@ -90,4 +90,4 @@ Like its Goong counterpart, this control relies on the goong-js stylesheet to wo
 
 ## Source
 
-[attribution-control.js](https://github.com/goong-io/goong-map-react/tree/master/src/components/attribution-control.js)
+[attribution-control.js](https://github.com/goong-io/goong-map-react/tree/main/src/components/attribution-control.js)

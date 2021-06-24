@@ -1,7 +1,7 @@
 import test from 'tape-catch';
 import {fromJS} from 'immutable';
 
-import {normalizeStyle} from 'react-map-gl/utils/style-utils';
+import {normalizeStyle} from '@goongmaps/goong-map-react/utils/style-utils';
 
 const testStyle = {
   version: 8,

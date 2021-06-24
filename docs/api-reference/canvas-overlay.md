@@ -47,5 +47,5 @@ Stop propagation of pointermove event to the map component. Can be used to stop 
 
 
 ## Source
-[canvas-overlay.js](https://github.com/goong-io/goong-map-react/tree/master/src/overlays/canvas-overlay.js)
+[canvas-overlay.js](https://github.com/goong-io/goong-map-react/tree/main/src/overlays/canvas-overlay.js)
 

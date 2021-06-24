@@ -1,6 +1,6 @@
 # Example: Draw Polygon
 
-Demonstrates how to use [react-map-gl-draw](https://github.com/uber/nebula.gl/tree/master/modules/react-map-gl-draw) to draw polygons with react-map-gl.
+Demonstrates how to use [react-map-gl-draw](https://github.com/uber/nebula.gl/tree/master/modules/react-map-gl-draw) to draw polygons with `@goongmaps/goong-map-react`.
 
 ## Usage
 

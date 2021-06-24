@@ -15,7 +15,7 @@ function ControlPanel(props) {
       )}
       <div className="source-link">
         <a
-          href="https://github.com/goong-io/goong-map-react/tree/master/examples/draw-polygon"
+          href="https://github.com/goong-io/goong-map-react/tree/main/examples/draw-polygon"
           target="_new"
         >
           View Code ↗

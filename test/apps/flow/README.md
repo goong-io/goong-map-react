@@ -1,6 +1,6 @@
-# react-map-gl example using Flow types
+# @goongmaps/goong-map-react example using Flow types
 
-The configuration showcased here is a minimum setup using react-map-gl with flow types.
+The configuration showcased here is a minimum setup using `@goongmaps/goong-map-react` with flow types.
 
 ## Usage
 

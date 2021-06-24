@@ -1,7 +1,7 @@
 import * as React from 'react';
 import {useState, useMemo, useCallback} from 'react';
 import {render} from 'react-dom';
-import MapGL, {Popup, Source, Layer} from 'react-map-gl';
+import MapGL, {Popup, Source, Layer} from '@goongmaps/goong-map-react';
 import ControlPanel from './control-panel';
 
 import {countiesLayer, highlightLayer} from './map-style.js';

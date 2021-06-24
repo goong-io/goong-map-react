@@ -1,4 +1,4 @@
-import {MapController} from 'react-map-gl';
+import {MapController} from '@goongmaps/goong-map-react';
 
 export default class MyMapController extends MapController {
   // register custom events

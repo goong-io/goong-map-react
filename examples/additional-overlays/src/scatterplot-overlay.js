@@ -21,7 +21,7 @@ import * as React from 'react';
 import {useCallback} from 'react';
 import PropTypes from 'prop-types';
 
-import {CanvasOverlay} from 'react-map-gl';
+import {CanvasOverlay} from '@goongmaps/goong-map-react';
 
 function round(x, n) {
   const tenN = Math.pow(10, n);

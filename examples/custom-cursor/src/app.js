@@ -2,7 +2,7 @@
 import * as React from 'react';
 import {useState, useCallback} from 'react';
 import {render} from 'react-dom';
-import MapGL from 'react-map-gl';
+import MapGL from '@goongmaps/goong-map-react';
 import ControlPanel from './control-panel';
 import MAP_STYLE from '../../map-style-basic-v8.json';
 

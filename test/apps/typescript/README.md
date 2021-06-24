@@ -1,6 +1,6 @@
-# react-map-gl example using TypeScript
+# @goongmaps/goong-map-react example using TypeScript
 
-The configuration showcased here is a minimum setup using react-map-gl with TypeScript.
+The configuration showcased here is a minimum setup using `@goongmaps/goong-map-react` with TypeScript.
 
 ## Usage
 

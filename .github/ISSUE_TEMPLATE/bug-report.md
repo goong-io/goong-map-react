@@ -14,13 +14,13 @@ assignees: ''
 
 <!-- Steps to reproduce the behavior. -->
 <!-- Providing the following could help us resolve this issue faster:
-- A Codepen [example](https://codepen.io/vis-gl) or an equivalent online service that reproduces the behavior
+- A Codepen or an equivalent online service that reproduces the behavior
 -->
 
 #### Environment (please complete the following information):
 
-- Library Version: [e.g. react-map-gl 6.1.10]
-- Mapbox Version: [e.g. mapbox-gl 2.1.1]
+- Library Version: [e.g. @goongmaps/goong-map-react 1.0.9]
+- Goong JS Version: [e.g. goong-js 1.0.0]
 - React Version: [e.g. react 17.0.1]
 - Browser Version: [e.g. Chrome 88.0]
 - OS: [e.g. Mac OS X 11.2]

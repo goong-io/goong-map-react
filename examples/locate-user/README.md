@@ -1,6 +1,6 @@
 # Example: Locate User 
 
-Demonstrates how to automatically locate the user and track their current location with react-map-gl.
+Demonstrates how to automatically locate the user and track their current location with `@goongmaps/goong-map-react`.
 
 ## Usage
 

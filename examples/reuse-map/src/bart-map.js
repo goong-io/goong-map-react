@@ -1,6 +1,6 @@
 import * as React from 'react';
 import {useState} from 'react';
-import MapGL, {Marker} from 'react-map-gl';
+import MapGL, {Marker} from '@goongmaps/goong-map-react';
 
 import bartStations from '../../.data/bart-station.json';
 

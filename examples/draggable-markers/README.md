@@ -1,6 +1,6 @@
 # Example: Draggable Marker
 
-Demonstrates how Marker component can be dragged with react-map-gl.
+Demonstrates how Marker component can be dragged with `@goongmaps/goong-map-react`.
 
 ## Usage
 

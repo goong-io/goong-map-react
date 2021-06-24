@@ -27,5 +27,5 @@ Parameters:
 
 ## Source
 
-[linear-interpolator.js](https://github.com/goong-io/goong-map-react/tree/master/src/utils/transition/linear-interpolator.js)
+[linear-interpolator.js](https://github.com/goong-io/goong-map-react/tree/main/src/utils/transition/linear-interpolator.js)
 

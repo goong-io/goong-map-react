@@ -9,7 +9,7 @@ const DEPRECATED_PROPS = [
 ];
 
 function getDeprecatedText(name) {
-  return `react-map-gl: \`${name}\` is removed.`;
+  return `@goongmaps/goong-map-react: \`${name}\` is removed.`;
 }
 
 function getNewText(name) {

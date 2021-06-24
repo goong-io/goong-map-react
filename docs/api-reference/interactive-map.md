@@ -409,4 +409,4 @@ Inherit the following methods from [StaticMap](/docs/api-reference/static-map.md
 
 ## Source
 
-[interactive-map.js](https://github.com/goong-io/goong-map-react/tree/master/src/components/interactive-map.js)
+[interactive-map.js](https://github.com/goong-io/goong-map-react/tree/main/src/components/interactive-map.js)

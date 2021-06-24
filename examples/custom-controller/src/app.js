@@ -2,7 +2,7 @@
 import * as React from 'react';
 import {useState, useCallback} from 'react';
 import {render} from 'react-dom';
-import MapGL from 'react-map-gl';
+import MapGL from '@goongmaps/goong-map-react';
 
 import ControlPanel from './control-panel';
 import MapController from './map-controller';
@@ -12,9 +12,9 @@ const GOONG_MAPTILES_KEY = ''; // Set your goong maptiles key here
 
 export default function App() {
   const [viewport, setViewport] = useState({
-    longitude: -122.45,
-    latitude: 37.78,
-    zoom: 15.5,
+    latitude: 21.02727,
+    longitude: 105.85119,
+    zoom: 12.5,
     bearing: 0,
     pitch: 0
   });

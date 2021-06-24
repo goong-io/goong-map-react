@@ -15,7 +15,7 @@ function ControlPanel(props) {
       </p>
       <div className="source-link">
         <a
-          href="https://github.com/goong-io/goong-map-react/tree/master/examples/geojson"
+          href="https://github.com/goong-io/goong-map-react/tree/main/examples/geojson"
           target="_new"
         >
           View Code ↗

@@ -29,8 +29,8 @@ const LOCAL_DEVELOPMENT_CONFIG = {
 
   resolve: {
     alias: {
-      // Imports the react-map-gl library from the src directory in this repo
-      'react-map-gl': SRC_DIR,
+      // Imports the @goongmaps/goong-map-react library from the src directory in this repo
+      '@goongmaps/goong-map-react': SRC_DIR,
       '../utils/goongmap': resolve(
         LIB_DIR,
         './node_modules/@goongmaps/goong-js/dist/goong-js-dev.js'

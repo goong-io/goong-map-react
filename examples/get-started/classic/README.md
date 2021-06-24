@@ -1,6 +1,6 @@
-# react-map-gl Example Using React Class Component
+# @goongmaps/goong-map-react Example Using React Class Component
 
-This example shows a minimal app configuration to use react-map-gl with a React class component.
+This example shows a minimal app configuration to use `@goongmaps/goong-map-react` with a React class component.
 
 ## Usage
 

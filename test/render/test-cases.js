@@ -35,9 +35,9 @@ export default [
     title: 'Basic map',
     props: {
       goongApiAccessToken: __GOONG_MAPTILES_KEY__,
-      mapStyle: 'https://tiles.goong.io/assets/goong_map_web.json',
-      longitude: -122.4,
-      latitude: 37.78,
+      mapStyle: 'https://tiles.goong.io/assets/goong_map_dark.json',
+      longitude: 105.84504,
+      latitude: 21.03001,
       zoom: 12.5
     },
     threshold: 0.97,

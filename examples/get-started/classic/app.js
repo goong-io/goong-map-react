@@ -2,7 +2,7 @@
 import * as React from 'react';
 import {Component} from 'react';
 import {render} from 'react-dom';
-import MapGL from 'react-map-gl';
+import MapGL from '@goongmaps/goong-map-react';
 
 const GOONG_MAPTILES_KEY = ''; // Set your goong maptiles key here
 

@@ -24,7 +24,7 @@ import {extent} from 'd3-array';
 import {scaleLinear} from 'd3-scale';
 import {geoPath, geoTransform} from 'd3-geo';
 
-import {CanvasOverlay} from 'react-map-gl';
+import {CanvasOverlay} from '@goongmaps/goong-map-react';
 
 const propTypes = {
   globalOpacity: PropTypes.number.isRequired,

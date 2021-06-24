@@ -50,4 +50,4 @@ Stop propagation of pointermove event to the map component. Can be used to stop 
 
 ## Source
 
-[html-overlay.js](https://github.com/goong-io/goong-map-react/tree/master/src/overlays/html-overlay.js)
+[html-overlay.js](https://github.com/goong-io/goong-map-react/tree/main/src/overlays/html-overlay.js)

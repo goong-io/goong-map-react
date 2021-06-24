@@ -7,7 +7,7 @@ function ControlPanel() {
       <p>Hover over counties to highlight counties that share the same name.</p>
       <div className="source-link">
         <a
-          href="https://github.com/goong-io/goong-map-react/tree/master/examples/filter"
+          href="https://github.com/goong-io/goong-map-react/tree/main/examples/filter"
           target="_new"
         >
           View Code ↗

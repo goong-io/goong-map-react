@@ -1,6 +1,6 @@
 # Example: Zoom To Bounds
 
-Demonstrates how to zoom to a bounding box with react-map-gl.
+Demonstrates how to zoom to a bounding box with `@goongmaps/goong-map-react`.
 
 ## Usage
 

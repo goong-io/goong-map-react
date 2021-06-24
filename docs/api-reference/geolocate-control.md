@@ -139,4 +139,4 @@ Like its Goong counterpart, this control relies on the goong-js stylesheet to wo
 
 ## Source
 
-[geolocate-control.js](https://github.com/goong-io/goong-map-react/tree/master/src/components/geolocate-control.js)
+[geolocate-control.js](https://github.com/goong-io/goong-map-react/tree/main/src/components/geolocate-control.js)

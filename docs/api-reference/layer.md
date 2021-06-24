@@ -65,5 +65,5 @@ Note that layers are added by the order that they mount. They are *NOT* reordere
 
 ## Source
 
-[layer.js](https://github.com/goong-io/goong-map-react/tree/master/src/components/layer.js)
+[layer.js](https://github.com/goong-io/goong-map-react/tree/main/src/components/layer.js)
 

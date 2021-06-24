@@ -50,7 +50,7 @@ function StyleControls(props) {
       <p>Customize the cursor based on interactivity.</p>
       <div className="source-link">
         <a
-          href="https://github.com/goong-io/goong-map-react/tree/master/examples/custom-cursor"
+          href="https://github.com/goong-io/goong-map-react/tree/main/examples/custom-cursor"
           target="_new"
         >
           View Code ↗

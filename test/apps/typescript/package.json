@@ -1,7 +1,7 @@
 {
   "scripts": {
     "typecheck": "flow check",
-    "install-from-root": "rm -rf node_modules/react-map-gl && mkdir node_modules/react-map-gl && cp ../../../package.json node_modules/react-map-gl && cp -r ../../../dist node_modules/react-map-gl && cp -r ../../../src node_modules/react-map-gl",
+    "install-from-root": "rm -rf node_modules/@goongmaps/goong-map-react && mkdir -p node_modules/@goongmaps/goong-map-react && cp ../../../package.json node_modules/@goongmaps/goong-map-react && cp -r ../../../dist node_modules/@goongmaps/goong-map-react && cp -r ../../../src node_modules/@goongmaps/goong-map-react",
     "start": "npm run install-from-root && webpack-dev-server --progress --hot --open"
   },
   "dependencies": {

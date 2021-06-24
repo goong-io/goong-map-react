@@ -9,7 +9,7 @@ function ControlPanel(props) {
       <p>Smooth animate of the viewport.</p>
       <div className="source-link">
         <a
-          href="https://github.com/goong-io/goong-map-react/tree/master/examples/viewport-animation"
+          href="https://github.com/goong-io/goong-map-react/tree/main/examples/viewport-animation"
           target="_new"
         >
           View Code ↗

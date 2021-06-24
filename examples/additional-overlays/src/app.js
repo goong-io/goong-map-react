@@ -22,7 +22,7 @@
 import * as React from 'react';
 import {useState} from 'react';
 import {render} from 'react-dom';
-import MapGL from 'react-map-gl';
+import MapGL from '@goongmaps/goong-map-react';
 
 import ScatterplotOverlay from './scatterplot-overlay';
 import ChoroplethOverlay from './choropleth-overlay';

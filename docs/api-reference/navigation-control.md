@@ -111,5 +111,5 @@ Like its Goong counterpart, this control relies on the goong-js stylesheet to wo
 
 ## Source
 
-[navigation-control.js](https://github.com/goong-io/goong-map-react/tree/master/src/components/navigation-control.js)
+[navigation-control.js](https://github.com/goong-io/goong-map-react/tree/main/src/components/navigation-control.js)
 

@@ -7,7 +7,7 @@ import MapGL, {
   FullscreenControl,
   ScaleControl,
   GeolocateControl
-} from 'react-map-gl';
+} from '@goongmaps/goong-map-react';
 
 import ControlPanel from './control-panel';
 import Pins from './pins';

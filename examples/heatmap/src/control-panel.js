@@ -51,13 +51,11 @@ function ControlPanel(props) {
       <hr />
       <p>
         Data source:{' '}
-        <a href="https://docs.goong.io/assets/earthquakes.geojson">
-          earthquakes.geojson
-        </a>
+        <a href="https://docs.goong.io/assets/earthquakes.geojson">earthquakes.geojson</a>
       </p>
       <div className="source-link">
         <a
-          href="https://github.com/goong-io/goong-map-react/tree/master/examples/heatmap"
+          href="https://github.com/goong-io/goong-map-react/tree/main/examples/heatmap"
           target="_new"
         >
           View Code ↗

@@ -73,4 +73,4 @@ The context value object may contain the following fields:
 
 ## Source
 
-[map-context.js](https://github.com/goong-io/goong-map-react/tree/master/src/components/map-context.js)
+[map-context.js](https://github.com/goong-io/goong-map-react/tree/main/src/components/map-context.js)

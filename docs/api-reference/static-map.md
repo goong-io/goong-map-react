@@ -235,4 +235,4 @@ Use Goong's `queryRenderedFeatures` API to find features at point or in a boundi
 
 ## Source
 
-[static-map.js](https://github.com/goong-io/goong-map-react/tree/master/src/components/static-map.js)
+[static-map.js](https://github.com/goong-io/goong-map-react/tree/main/src/components/static-map.js)

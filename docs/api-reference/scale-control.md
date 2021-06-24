@@ -87,4 +87,4 @@ Like its Goong counterpart, this control relies on the goong-js stylesheet to wo
 
 ## Source
 
-[scale-control.js](https://github.com/goong-io/goong-map-react/tree/master/src/components/scale-control.js)
+[scale-control.js](https://github.com/goong-io/goong-map-react/tree/main/src/components/scale-control.js)

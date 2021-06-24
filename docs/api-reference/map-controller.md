@@ -76,4 +76,4 @@ Invoke `onViewportChange` callback with a new map state.
 
 ## Source
 
-[map-controller.js](https://github.com/goong-io/goong-map-react/tree/master/src/utils/map-controller.js)
+[map-controller.js](https://github.com/goong-io/goong-map-react/tree/main/src/utils/map-controller.js)

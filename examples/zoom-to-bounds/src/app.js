@@ -1,7 +1,7 @@
 import * as React from 'react';
 import {useState} from 'react';
 import {render} from 'react-dom';
-import MapGL, {LinearInterpolator, WebMercatorViewport} from 'react-map-gl';
+import MapGL, {LinearInterpolator, WebMercatorViewport} from '@goongmaps/goong-map-react';
 import bbox from '@turf/bbox';
 
 import ControlPanel from './control-panel';

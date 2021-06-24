@@ -24,7 +24,7 @@ function ControlPanel(props) {
       <p>Override default event handling logic.</p>
       <div className="source-link">
         <a
-          href="https://github.com/goong-io/goong-map-react/tree/master/examples/custom-controller"
+          href="https://github.com/goong-io/goong-map-react/tree/main/examples/custom-controller"
           target="_new"
         >
           View Code ↗

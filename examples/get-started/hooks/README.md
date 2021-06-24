@@ -1,6 +1,6 @@
-# react-map-gl Example Using React Functional Component
+# @goongmaps/goong-map-react Example Using React Functional Component
 
-This example shows a minimal app configuration to use react-map-gl with a React functional component.
+This example shows a minimal app configuration to use `@goongmaps/goong-map-react` with a React functional component.
 
 ## Usage
 

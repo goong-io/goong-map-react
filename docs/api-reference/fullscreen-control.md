@@ -84,5 +84,5 @@ Stop propagation of pointermove event to the map component. Can be used to stop 
 Like its Goong counterpart, this control relies on the goong-js stylesheet to work properly. Make sure to add the stylesheet to your page.
 
 ## Source
-[fullscreen-control.js](https://github.com/goong-io/goong-map-react/tree/master/src/components/fullscreen-control.js)
+[fullscreen-control.js](https://github.com/goong-io/goong-map-react/tree/main/src/components/fullscreen-control.js)
 

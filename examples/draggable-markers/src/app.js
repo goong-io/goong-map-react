@@ -1,7 +1,7 @@
 import * as React from 'react';
 import {useState, useCallback} from 'react';
 import {render} from 'react-dom';
-import MapGL, {Marker, NavigationControl} from 'react-map-gl';
+import MapGL, {Marker, NavigationControl} from '@goongmaps/goong-map-react';
 
 import ControlPanel from './control-panel';
 import Pin from './pin';
@@ -25,7 +25,7 @@ export default function App() {
   });
   const [marker, setMarker] = useState({
     latitude: 21.02727,
-    longitude: 105.85119,
+    longitude: 105.85119
   });
   const [events, logEvents] = useState({});
 

@@ -1,6 +1,6 @@
 # Example: 3D Terrain
 
-Demonstrates how to add 3D terrain with react-map-gl.
+Demonstrates how to add 3D terrain with `@goongmaps/goong-map-react`.
 
 ## Usage
 

@@ -1,7 +1,7 @@
 import * as React from 'react';
 import {useState, useCallback} from 'react';
 import {render} from 'react-dom';
-import MapGL from 'react-map-gl';
+import MapGL from '@goongmaps/goong-map-react';
 import ControlPanel from './control-panel';
 
 const GOONG_MAPTILES_KEY = ''; // Set your goong maptiles key here

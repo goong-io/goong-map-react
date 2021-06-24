@@ -1,7 +1,7 @@
 import * as React from 'react';
 import {useState, useEffect, useMemo} from 'react';
 import {render} from 'react-dom';
-import MapGL, {Source, Layer} from 'react-map-gl';
+import MapGL, {Source, Layer} from '@goongmaps/goong-map-react';
 import ControlPanel from './control-panel';
 import {heatmapLayer} from './map-style';
 

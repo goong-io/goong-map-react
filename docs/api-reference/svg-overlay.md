@@ -50,4 +50,4 @@ Stop propagation of pointermove event to the map component. Can be used to stop 
 
 ## Source
 
-[svg-overlay.js](https://github.com/goong-io/goong-map-react/tree/master/src/overlays/svg-overlay.js)
+[svg-overlay.js](https://github.com/goong-io/goong-map-react/tree/main/src/overlays/svg-overlay.js)

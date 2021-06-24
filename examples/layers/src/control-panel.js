@@ -82,7 +82,7 @@ function StyleControls(props) {
       <p>Dynamically show/hide map layers and change color with Immutable map style.</p>
       <div className="source-link">
         <a
-          href="https://github.com/goong-io/goong-map-react/tree/master/examples/layers"
+          href="https://github.com/goong-io/goong-map-react/tree/main/examples/layers"
           target="_new"
         >
           View Code ↗

@@ -22,8 +22,8 @@
 const {resolve} = require('path');
 
 const ALIASES = {
-  'react-map-gl/test': resolve('./test'),
-  'react-map-gl': resolve('./src'),
+  '@goongmaps/goong-map-react/test': resolve('./test'),
+  '@goongmaps/goong-map-react': resolve('./src'),
   'mapbox-gl$': resolve('./node_modules/@goongmaps/goong-js/dist/goong-js.js'),
   webworkify: 'webworkify-webpack-dropin'
 };

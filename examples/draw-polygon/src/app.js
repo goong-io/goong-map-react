@@ -1,7 +1,7 @@
 import * as React from 'react';
 import {useState, useRef, useCallback} from 'react';
 import {render} from 'react-dom';
-import MapGL from 'react-map-gl';
+import MapGL from '@goongmaps/goong-map-react';
 import {Editor, DrawPolygonMode, EditingMode} from 'react-map-gl-draw';
 
 import ControlPanel from './control-panel';

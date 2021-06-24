@@ -7,7 +7,7 @@ function ControlPanel() {
       <p>Click on a San Fransisco Neighborhood to zoom in.</p>
       <div className="source-link">
         <a
-          href="https://github.com/goong-io/goong-map-react/tree/master/examples/zoom-to-bounds"
+          href="https://github.com/goong-io/goong-map-react/tree/main/examples/zoom-to-bounds"
           target="_new"
         >
           View Code ↗

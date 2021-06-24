@@ -29,4 +29,4 @@ Parameters:
 
 ## Source
 
-[viewport-fly-to-interpolator.js](https://github.com/goong-io/goong-map-react/tree/master/src/utils/transition/viewport-fly-to-interpolator.js)
+[viewport-fly-to-interpolator.js](https://github.com/goong-io/goong-map-react/tree/main/src/utils/transition/viewport-fly-to-interpolator.js)

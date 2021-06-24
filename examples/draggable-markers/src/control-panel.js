@@ -24,7 +24,7 @@ function ControlPanel(props) {
       </div>
       <div className="source-link">
         <a
-          href="https://github.com/goong-io/goong-map-react/tree/master/examples/draggable-markers"
+          href="https://github.com/goong-io/goong-map-react/tree/main/examples/draggable-markers"
           target="_new"
         >
           View Code ↗

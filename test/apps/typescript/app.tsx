@@ -11,8 +11,8 @@ const GOONG_MAPTILES_KEY = ''; // Set your goong maptiles key here
 function Root() {
   const [viewport, setViewport] = useState<ViewportProps>({
     // width: '100vw', // should generate error
-    latitude: 37.8,
-    longitude: -122.4,
+    latitude: 21.02923,
+    longitude: 105.85061,
     zoom: 14,
     bearing: 0,
     pitch: 0

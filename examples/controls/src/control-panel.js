@@ -16,7 +16,7 @@ function ControlPanel() {
       </p>
       <div className="source-link">
         <a
-          href="https://github.com/goong-io/goong-map-react/tree/master/examples/controls"
+          href="https://github.com/goong-io/goong-map-react/tree/main/examples/controls"
           target="_new"
         >
           View Code ↗

@@ -1,6 +1,6 @@
 # Example: DeckGL Overlay
 
-This example demonstrates using [deck.gl](https://deck.gl) to render a data overlay on top of react-map-gl.
+This example demonstrates using [deck.gl](https://deck.gl) to render a data overlay on top of `@goongmaps/goong-map-react`.
 
 ## Usage
 

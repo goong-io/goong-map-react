@@ -1,7 +1,7 @@
 import * as React from 'react';
 import {useState} from 'react';
 import {render} from 'react-dom';
-import MapGL, {GeolocateControl} from 'react-map-gl';
+import MapGL, {GeolocateControl} from '@goongmaps/goong-map-react';
 
 const GOONG_MAPTILES_KEY = ''; // Set your goong maptiles key here
 
