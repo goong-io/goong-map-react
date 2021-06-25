@@ -28,6 +28,7 @@ module.exports.onCreateWebpackConfig = function onCreateWebpackConfigOverride(op
 
   Object.assign(config.resolve.alias, {
     '@goongmaps/goong-map-react': resolve(__dirname, '../src'),
+    'react-map-gl': resolve(__dirname, '../src'),
     react: resolve('node_modules/react'),
     'react-dom': resolve('node_modules/react-dom')
   }, dependencyAliases);
