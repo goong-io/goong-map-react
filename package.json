@@ -1,7 +1,7 @@
 {
   "name": "@goongmaps/goong-map-react",
   "description": "A fork of react-map-gl. React components for Goong JS",
-  "version": "1.0.9",
+  "version": "1.1.0",
   "keywords": [
     "goong",
     "goong-io",
@@ -38,19 +38,18 @@
     "build": "ocular-clean && ocular-build && npm run flowgen",
     "flowgen": "for i in $(find dist -type f -name \"*.d.ts\"); do sh -c \"flowgen $i -o ${i%.*.*}.js.flow\"; done;",
     "lint": "ocular-lint",
-    "cover": "ocular-test cover",
+    "cover": "ocullar-test cover",
     "publish-prod": "ocular-publish prod",
     "publish-beta": "ocular-publish beta",
     "test": "tsc && ocular-test",
     "test-fast": "tsc && ocular-test node",
-    "metrics": "ocular-metrics",
-    "update-release-branch": "scripts/update-release-branch.sh"
+    "metrics": "ocular-metrics"
   },
   "dependencies": {
     "@babel/runtime": "^7.0.0",
     "@types/geojson": "^7946.0.7",
     "@types/mapbox-gl": "^2.0.3",
-    "@goongmaps/goong-js": "^1.0.6",
+    "@goongmaps/goong-js": "^1.0.8",
     "mjolnir.js": "^2.5.0",
     "prop-types": "^15.7.2",
     "resize-observer-polyfill": "^1.5.1",

@@ -1,5 +1,8 @@
 # CHANGELOG
 
+# Version 1.1.0 (Jul 8, 2021)
+- Fix wrong goong-js base url
+
 # Version 1.0.9 Goong
 
 - Convert code to Goong

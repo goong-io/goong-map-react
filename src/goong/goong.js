@@ -75,7 +75,7 @@ const propTypes = {
 const defaultProps = {
   container: document.body,
   goongApiAccessToken: getAccessToken(),
-  goongApiUrl: 'https://rsapi.goong.io',
+  goongApiUrl: 'https://tiles.goong.io',
   preserveDrawingBuffer: false,
   attributionControl: true,
   reuseMaps: false,

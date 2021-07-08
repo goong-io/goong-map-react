@@ -53,7 +53,7 @@ Goong WebGL context creation option. Useful when you want to export the canvas a
 
 ##### `goongApiUrl` (String)
 
-- default: `https://rsapi.goong.io`
+- default: `https://tiles.goong.io`
 
 
 ##### `mapOptions` (Object)
