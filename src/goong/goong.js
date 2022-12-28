@@ -289,7 +289,7 @@ export default class Goong {
       return;
     }
 
-    if (!this.props.reuseMaps && !Goong.savedMap) {
+    if (this.props.reuseMaps && !Goong.savedMap) {
       Goong.savedMap = this._map;
 
       // deregister the goong event listeners
