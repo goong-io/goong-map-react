@@ -209,13 +209,17 @@ export default class Goong {
     this._map = Goong.savedMap;
     // When reusing the saved map, we need to reparent the map(canvas) and other child nodes
     // intoto the new container from the props.
-    // Step1: reparenting child nodes from old container to new container
+    // Step1: reparenting child nodes from old container to new container, do not execute if same element, otherwise will loop and crash.
     const oldContainer = this._map.getContainer();
     const newContainer = props.container;
     newContainer.classList.add('mapboxgl-map');
-    while (oldContainer.childNodes.length > 0) {
-      newContainer.appendChild(oldContainer.childNodes[0]);
+
+    if (oldContainer !== newContainer) {
+      while (oldContainer.childNodes.length > 0) {
+        newContainer.appendChild(oldContainer.childNodes[0]);
+      }
     }
+
     // Step2: replace the internal container with new container from the react component
     this._map._container = newContainer;
     Goong.savedMap = null;
@@ -285,7 +289,7 @@ export default class Goong {
       return;
     }
 
-    if (!Goong.savedMap) {
+    if (this.props.reuseMaps && !Goong.savedMap) {
       Goong.savedMap = this._map;
 
       // deregister the goong event listeners
