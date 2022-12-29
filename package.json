@@ -1,7 +1,7 @@
 {
   "name": "@goongmaps/goong-map-react",
   "description": "A fork of react-map-gl. React components for Goong JS",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "keywords": [
     "goong",
     "goong-io",
