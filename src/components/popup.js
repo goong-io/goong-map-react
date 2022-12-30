@@ -174,9 +174,10 @@ function Popup(props) {
   );
 
   // If eventManager does not exist (using with static map), listen to React event
-  const onReactClick = useCallback(e => !context.eventManager && onClick(e, thisRef), [
-    context.eventManager
-  ]);
+  const onReactClick = useCallback(
+    e => !context.eventManager && onClick(e, thisRef),
+    [context.eventManager]
+  );
 
   return (
     <div
